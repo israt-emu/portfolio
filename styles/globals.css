@@ -7,6 +7,13 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #0a192f;
+}
+:root {
+  --primary-color: rgb(182, 143, 162);
+  --secondary-color: rgb(101, 188, 191);
+  --title-color: rgb(245, 235, 239);
+  --small-text-color: rgb(168, 178, 209);
 }
 
 a {
