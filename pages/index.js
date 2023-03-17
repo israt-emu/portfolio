@@ -4,6 +4,10 @@ import styles from "../styles/Home.module.css";
 import Navigation from "../components/Navigation";
 import Banner from "../components/Banner";
 import About from "../components/About";
+import Work from "../components/Work";
+import Skills from "../components/Skills";
+import Education from "../components/Education";
+import Contact from "../components/Contact";
 
 export default function Home() {
   return (
@@ -11,6 +15,10 @@ export default function Home() {
       <Navigation />
       <Banner />
       <About />
+      <Work />
+      <Skills />
+      <Education />
+      <Contact />
     </div>
   );
 }

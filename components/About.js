@@ -4,28 +4,20 @@ import myImage from "../assets/images/IMG_20230316_210606.jpg";
 
 const About = () => {
   return (
-    <section className="">
-      <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-8 lg:flex-row  items-center">
-        <div className="flex items-center mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 lg:ml-8">
-          <Image src={myImage} alt="" className="object-contain w-1/2" />
-        </div>
-        <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:text-left">
-          <h1 className="text-5xl font-bold leading-none sm:text-6xl text-title">
-            Ac mattis
-            <span className="dark:text-violet-400">senectus</span>erat pharetra
-          </h1>
-          <p className="mt-6 mb-4 text-lg sm:mb-8 text-small_text">
-            Dictum aliquam porta in condimentum ac integer
-            <br className="hidden md:inline lg:hidden" />
-            turpis pulvinar, est scelerisque ligula sem
-          </p>
-
-          <div className="items-center flex-shrink-0 hidden lg:flex">
-            <button className="px-4 py-2 rounded border-2 border-primary text-primary ">Explore My Projects</button>
-          </div>
-        </div>
+    <div className="w-10/12 flex flex-col justify-center px-6 mx-auto sm:py-12 md:flex-row  items-center h-screen">
+      <div className="flex items-center mt-8 lg:mt-0 w-1/2 relative">
+        <div className="border-2 border-primary rounded w-[300px] h-72 "></div>
+        <Image src={myImage} alt="" className="object-contain -top-5 left-5 w-3/5 absolute rounded" />
       </div>
-    </section>
+      <div className="flex flex-col justify-center text-center rounded-sm lg:text-left w-1/2">
+        <div className="flex items-center">
+          <div className="w-7 h-7 rounded bg-secondary"></div>
+          <h1 className="text-3xl font-semibold leading-none text-title ml-3">About Me</h1>
+        </div>
+
+        <p className="mt-6 mb-4 text-lg sm:mb-8 text-small_text">Dictum aliquam porta in condimentum ac integer Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis vero ratione aliquam maiores et, voluptas neque ullam facilis excepturi! Possimus nemo sapiente, provident repellat quas ab doloribus harum impedit vitae.</p>
+      </div>
+    </div>
   );
 };
 
