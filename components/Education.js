@@ -2,7 +2,7 @@ import Image from "next/image";
 import nstu_logo from "../assets/images/nstu.png";
 import sa_logo from "../assets/images/sa.jpg";
 import nstu from "../assets/images/fountain_pen.jpg";
-import sa from "../assets/images/sa image.jpg";
+import sa from "../assets/images/sa-image.jpg";
 import {BiLinkExternal} from "react-icons/bi";
 import Link from "next/link";
 const Education = () => {

@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import {BiLinkExternal} from "react-icons/bi";
 import {BsGithub} from "react-icons/bs";
-import library from "../assets/images/Untitled design (2).png";
-import travel from "../assets/images/Untitled design (1).png";
-import lipstick from "../assets/images/Untitled design.png";
+import library from "../assets/images/library.png";
+import travel from "../assets/images/tour.png";
+import lipstick from "../assets/images/lipstick.png";
 import happyMom from "../assets/images/hapy-mom-main.png";
 const Projects = () => {
   return (
