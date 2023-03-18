@@ -4,7 +4,7 @@ import myImage from "../assets/images/IMG_20230316_210606.jpg";
 
 const About = () => {
   return (
-    <div className="w-10/12 flex flex-col justify-center px-6 mx-auto sm:py-12 md:flex-row  items-center h-screen">
+    <div className="w-10/12 flex flex-col justify-center px-6 mx-auto sm:py-20 md:flex-row  items-center">
       <div className="flex items-center mt-8 lg:mt-0 w-1/2 relative">
         <div className="border-2 border-primary rounded w-[300px] h-72 "></div>
         <Image src={myImage} alt="" className="object-contain -top-5 left-5 w-3/5 absolute rounded" />

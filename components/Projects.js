@@ -9,7 +9,7 @@ import happyMom from "../assets/images/hapy-mom-main.png";
 const Projects = () => {
   return (
     <div className="w-9/12 mx-auto py-8">
-      <h1 className="text-title text-4xl">Some Projects I’ve Built</h1>
+      <h1 className="text-title text-4xl text-center">Some Projects I’ve Built</h1>
       {/* //library  */}
       <div className="flex items-center justify-center my-16">
         <Image src={library} alt="" className="w-1/2 border border-gray-700" />

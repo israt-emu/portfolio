@@ -8,7 +8,7 @@ import Tools from "./Tools";
 const Skills = () => {
   const [active, setActive] = useState("programming");
   return (
-    <div className="container mx-auto w-9/12 h-screen py-8 px-6">
+    <div className="container mx-auto w-9/12 py-8 px-6">
       <div className="">
         <h2 className="text-2xl font-bold sm:text-4xl text-title mb-4 text-center">Skills That I have</h2>
       </div>

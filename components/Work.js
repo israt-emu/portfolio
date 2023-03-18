@@ -5,7 +5,7 @@ import zivaka from "../assets/images/zivaka.png";
 
 const Work = () => {
   return (
-    <div className="w-9/12 flex flex-col justify-center px-6 mx-auto h-screen text-title container">
+    <div className="w-9/12 flex flex-col justify-center px-6 py-20 mx-auto text-title container">
       <h1 className="flex justify-start text-3xl">Where I have worked</h1>
 
       <div className="py-12 mx-auto max-w-5xl">
