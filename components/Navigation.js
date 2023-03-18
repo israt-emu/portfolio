@@ -3,7 +3,7 @@ import logo from "../assets/images/Israt.png";
 
 const Navigation = () => {
   return (
-    <header className="p-2 rounded-lg dark:text-gray-100 text-title bg-white/5 backdrop-blur-lg sticky top-0">
+    <header className="p-2 rounded-lg dark:text-gray-100 text-title bg-white/5 backdrop-blur-lg sticky top-0 z-50">
       <div className="container flex justify-between h-16 mx-auto ">
         <div className="flex items-center">
           <Image src={logo} alt="logo" className="w-28" />
