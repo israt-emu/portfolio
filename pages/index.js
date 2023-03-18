@@ -8,6 +8,8 @@ import Work from "../components/Work";
 import Skills from "../components/Skills";
 import Education from "../components/Education";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
+import Projects from "../components/Projects";
 
 export default function Home() {
   return (
@@ -17,8 +19,10 @@ export default function Home() {
       <About />
       <Work />
       <Skills />
+      <Projects />
       <Education />
       <Contact />
+      <Footer />
     </div>
   );
 }

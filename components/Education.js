@@ -7,7 +7,7 @@ import {BiLinkExternal} from "react-icons/bi";
 import Link from "next/link";
 const Education = () => {
   return (
-    <div className="w-9/12 mx-auto py-8">
+    <div className="w-9/12 mx-auto py-16">
       <div className="flex items-center">
         <h1 className="text-4xl font-semibold text-title mr-3">Where I’ve Studied</h1>
         <hr className="border border-slate-700 w-1/5" />
@@ -21,7 +21,6 @@ const Education = () => {
               <h1 className="text-xl text-title">BSc. In Applied Mathematics</h1>
               <p className="text-sm text-small_text">NSTU | January 2018-March 2023</p>
               <Link href="https://nstu.edu.bd/">
-                {" "}
                 <BiLinkExternal className="text-small_text text-lg mt-2" />
               </Link>
             </div>
@@ -30,13 +29,11 @@ const Education = () => {
         </div>
         <div className="grid grid-cols-2 md:gap-12 items-center my-4">
           <div className="flex items-center">
-            {" "}
             <Image src={sa_logo} alt="" className="w-20 mr-3" />
             <div>
               <h1 className="text-xl text-title">Higher Secondary School Certificate</h1>
               <p className="text-sm text-small_text">Chowmuhoni Govt. S.A. College | April 2015-June 2017</p>
               <Link href="https://www.cgsacollege.edu.bd/">
-                {" "}
                 <BiLinkExternal className="text-small_text text-lg mt-2" />
               </Link>
             </div>
