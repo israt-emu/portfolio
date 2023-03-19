@@ -1,7 +1,8 @@
 import Image from "next/image";
-import React from "react";
+import React, {useEffect} from "react";
 import myImage from "../assets/images/IMG_20230316_210606.jpg";
 import about from "../assets/images/user.png";
+import {useAnimate, useInView} from "framer-motion";
 
 const About = () => {
   return (

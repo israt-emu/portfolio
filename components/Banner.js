@@ -7,11 +7,11 @@ import {motion} from "framer-motion";
 const Banner = () => {
   return (
     <motion.div
-      initial={{opacity: 0, scale: 0.7}}
-      animate={{opacity: 1, scale: [0.8, 0.9, 1]}}
+      initial={{scale: 0.5}}
+      animate={{scale: 1}}
       transition={{
-        duration: 0.5,
-        default: {ease: "easeOut"},
+        duration: 1,
+        // default: {ease: "linear"},
       }}
       className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-8 lg:flex-row lg:justify-between lg:ml-8 items-center"
     >
