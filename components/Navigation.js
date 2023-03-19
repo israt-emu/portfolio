@@ -8,7 +8,7 @@ const Navigation = () => {
         <div className="flex items-center">
           <Image src={logo} alt="logo" className="w-28" />
         </div>
-        <ul className="items-stretch hidden space-x-3 lg:flex backdrop-blur-sm bg-indigo-900/25 border border-gray-700 px-4 rounded-md">
+        <ul className="items-stretch hidden space-x-3 lg:flex backdrop-blur-sm skillbg border border-gray-700 px-4 rounded-md">
           <li className="flex items-center">
             <a
               rel="noopener noreferrer"
