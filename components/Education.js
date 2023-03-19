@@ -9,12 +9,12 @@ const Education = () => {
   return (
     <div className="w-9/12 mx-auto py-16">
       <div className="flex items-center">
-        <h1 className="text-4xl font-semibold text-title mr-3">Where I’ve Studied</h1>
+        <h1 className="text-2xl font-bold sm:text-4xl text-title mb-4 mr-3">Where I’ve Studied</h1>
         <hr className="border border-slate-700 w-1/5" />
       </div>
       <div className="flex flex-col pt-8">
         <div className="grid grid-cols-2 md:gap-12 items-center">
-          <div className="flex items-center">
+          <div className="flex items-center bg-slate-600/20 ring-1 ring-blue-400/20 rounded-lg  backdrop-blur-sm">
             {" "}
             <Image src={nstu_logo} alt="" className="w-20 mr-3" />
             <div>
@@ -27,8 +27,8 @@ const Education = () => {
           </div>
           <Image src={nstu} alt="" className="w-1/2" />
         </div>
-        <div className="grid grid-cols-2 md:gap-12 items-center my-4">
-          <div className="flex items-center">
+        <div className="grid grid-cols-2 md:gap-12 justify-between items-center my-4">
+          <div className="flex items-center bg-slate-600/20 ring-1 ring-blue-400/20 rounded-lg  backdrop-blur-sm py-3 pl-2">
             <Image src={sa_logo} alt="" className="w-20 mr-3" />
             <div>
               <h1 className="text-xl text-title">Higher Secondary School Certificate</h1>
