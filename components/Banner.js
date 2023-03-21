@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import myImage from "../assets/images/undraw_dev_focus_re_6iwt.svg";
-import { BsFacebook, BsLinkedin, BsGithub } from "react-icons/bs";
-import { motion } from "framer-motion";
+import {BsFacebook, BsLinkedin, BsGithub} from "react-icons/bs";
+import {motion} from "framer-motion";
 
 const Banner = () => {
   const banner = {
@@ -14,13 +14,10 @@ const Banner = () => {
     },
   };
   return (
-    <motion.div
-      variants={banner}
-      className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-8 lg:flex-row lg:justify-between lg:ml-8 items-center"
-    >
+    <motion.div variants={banner} className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-8 lg:flex-row lg:justify-between lg:ml-8 items-center h-screen">
       <motion.div
-        initial={{ opacity: 0, y: 80 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{opacity: 0, y: 80}}
+        animate={{opacity: 1, y: 0}}
         transition={{
           ease: "easeInOut",
           duration: 1,
@@ -49,14 +46,12 @@ const Banner = () => {
           </Link>
         </div>
         <div className="items-center flex-shrink-0 hidden lg:flex">
-          <button className="px-4 py-2 rounded border-2 border-primary text-primary ">
-            Explore My Projects
-          </button>
+          <button className="px-4 py-2 rounded border-2 border-primary text-primary ">Explore My Projects</button>
         </div>
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
+        initial={{opacity: 0, scale: 0}}
+        animate={{opacity: 1, scale: 1}}
         transition={{
           ease: "easeInOut",
           duration: 1,

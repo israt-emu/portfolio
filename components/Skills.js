@@ -6,10 +6,23 @@ import Frontend from "./Frontend";
 import Programming from "./Programming";
 import Tools from "./Tools";
 import skills from "../assets/images/skills.png";
+import {motion} from "framer-motion";
 const Skills = () => {
   const [active, setActive] = useState("programming");
+  const skillVariants = {
+    offscreen: {
+      y: 100,
+    },
+    onscreen: {
+      y: 0,
+      transition: {
+        type: "linear",
+        duration: 0.5,
+      },
+    },
+  };
   return (
-    <div className="container mx-auto w-9/12 py-8 px-6">
+    <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={skillVariants} className="container mx-auto w-9/12 py-8 px-6">
       <div className="flex items-center">
         <Image src={skills} alt="" className="w-12 mr-3" />
         <h2 className="text-2xl font-bold sm:text-4xl text-title mb-4 text-center">Skills That I have</h2>
@@ -40,7 +53,7 @@ const Skills = () => {
           {active === "design" && <Design />}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

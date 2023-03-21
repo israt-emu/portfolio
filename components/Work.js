@@ -3,10 +3,23 @@ import Link from "next/link";
 import {TbFileCertificate} from "react-icons/tb";
 import zivaka from "../assets/images/zivaka.png";
 import intern from "../assets/images/internship.png";
+import {motion} from "framer-motion";
 
 const Work = () => {
+  const workVariants = {
+    offscreen: {
+      y: 100,
+    },
+    onscreen: {
+      y: 0,
+      transition: {
+        type: "linear",
+        duration: 0.5,
+      },
+    },
+  };
   return (
-    <div className="w-9/12 flex flex-col justify-center px-6 py-20 mx-auto text-title container">
+    <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={workVariants} className="w-9/12 flex flex-col justify-center px-6 py-20 mx-auto text-title container">
       <div className="flex items-center">
         <Image src={intern} alt="" className="w-14 mr-3" />
         <h1 className="text-2xl font-bold sm:text-4xl text-title mb-4">Where I have worked</h1>
@@ -52,7 +65,7 @@ const Work = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
