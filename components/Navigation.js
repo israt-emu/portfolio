@@ -4,14 +4,33 @@ import { motion } from "framer-motion";
 
 const Navigation = () => {
   const nav = {
-    animate: {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
       transition: {
-        delayChildren: 0.4,
-        staggerChildren: 0.1,
+        delayChildren: 0.2,
+        staggerChildren: 0.2,
+        // type: "tween",
+        // duration: 0.5,
+        // ease: "linear",
       },
     },
+    // animate: {
+    //   transition: {
+    //     delayChildren: 0.4,
+    //     staggerChildren: 0.1,
+    //   },
+    // },
   };
-
+  const item = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1 },
+    transition: {
+      type: "tween",
+      duration: 0.5,
+      ease: "easeIn",
+    },
+  };
   return (
     <header className=" p-2 rounded-lg dark:text-gray-100 text-title bg-white/5 backdrop-blur-lg sticky top-0 z-50">
       <div className="container flex justify-between h-12 mx-auto ">
@@ -28,17 +47,20 @@ const Navigation = () => {
           <Image src={logo} alt="logo" className="w-24" />
         </motion.div>
         <motion.ul
-          // variants={nav}
+          initial="hidden"
+          animate="show"
+          variants={nav}
           className="items-stretch hidden space-x-3 lg:flex backdrop-blur-sm skillbg border border-gray-700 px-4 rounded-md"
         >
           <motion.li
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              ease: "easeInOut",
-              duration: 0.5,
-              delay: 0.3,
-            }}
+            // initial={{ opacity: 0 }}
+            // animate={{ opacity: 1 }}
+            // transition={{
+            //   ease: "easeInOut",
+            //   duration: 0.5,
+            //   delay: 0.3,
+            // }}
+            variants={item}
             className="flex items-center"
           >
             <a
@@ -49,16 +71,7 @@ const Navigation = () => {
               About
             </a>
           </motion.li>
-          <motion.li
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              ease: "easeInOut",
-              duration: 0.5,
-              delay: 0.4,
-            }}
-            className="flex items-center"
-          >
+          <motion.li variants={item} className="flex items-center">
             <a
               rel="noopener noreferrer"
               href="#"
@@ -67,16 +80,7 @@ const Navigation = () => {
               Experience
             </a>
           </motion.li>
-          <motion.li
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              ease: "easeInOut",
-              duration: 0.5,
-              delay: 0.5,
-            }}
-            className="flex items-center"
-          >
+          <motion.li variants={item} className="flex items-center">
             <a
               rel="noopener noreferrer"
               href="#"
@@ -85,16 +89,7 @@ const Navigation = () => {
               Project
             </a>
           </motion.li>
-          <motion.li
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              ease: "easeInOut",
-              duration: 0.5,
-              delay: 0.6,
-            }}
-            className="flex items-center"
-          >
+          <motion.li variants={item} className="flex items-center">
             <a
               rel="noopener noreferrer"
               href="#"
@@ -103,16 +98,7 @@ const Navigation = () => {
               Education
             </a>
           </motion.li>
-          <motion.li
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              ease: "easeInOut",
-              duration: 0.5,
-              delay: 0.7,
-            }}
-            className="flex items-center"
-          >
+          <motion.li variants={item} className="flex items-center">
             <a
               rel="noopener noreferrer"
               href="#"
@@ -125,13 +111,7 @@ const Navigation = () => {
         <div className="flex items-center">
           <div className="items-center flex-shrink-0 hidden lg:flex ml-3">
             <motion.button
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{
-                ease: "easeInOut",
-                duration: 0.5,
-                delay: 0.8,
-              }}
+              variants={nav}
               className="px-3 py-1 rounded border-2 border-primary text-primary font-medium"
             >
               Resume
