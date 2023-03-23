@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Programming = () => {
   return (
-    <div className="grid grid-cols-4 gap-5 w-full ">
+    <div className="grid lg:grid-cols-4 sm:grid-cols-3 gap-5 w-full ">
       <div className="flex  items-center  p-2 text-small_text h-10 shadow-lg rounded skillbg justify-start">
         <Image src={c} alt="c programming" className="w-6" />
         <p className="ml-3"> C </p>
