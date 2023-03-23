@@ -14,7 +14,7 @@ const Banner = () => {
     },
   };
   return (
-    <motion.div variants={banner} className="container flex flex-col-reverse justify-center p-6 mx-auto sm:py-4 lg:flex-row lg:justify-between lg:ml-8 items-center h-screen">
+    <motion.div variants={banner} className="container flex flex-col-reverse justify-center md:p-6 mx-auto sm:py-4 lg:flex-row lg:justify-between lg:ml-8 items-center h-screen">
       <motion.div
         initial={{opacity: 0, y: 80}}
         animate={{opacity: 1, y: 0}}
@@ -23,7 +23,7 @@ const Banner = () => {
           duration: 1,
           delay: 0.4,
         }}
-        className="flex flex-col justify-center p-6 rounded-sm lg:max-w-md xl:max-w-lg lg:text-left"
+        className="flex flex-col justify-center md:p-6 rounded-sm lg:max-w-md xl:max-w-lg lg:text-left"
       >
         <p className="text-title">Hi, my name is</p>
         <h1 className="text-5xl font-bold leading-none sm:text-6xl text-title">Israt Jahan</h1>
