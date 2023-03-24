@@ -57,9 +57,9 @@ const Banner = () => {
           duration: 1,
           delay: 0.5,
         }}
-        className="flex items-center justify-center md:p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 sm:mb-6 lg:mb-0"
+        className="flex items-center justify-center md:p-6 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 sm:mb-6 lg:mb-0"
       >
-        <Image src={myImage} alt="" className="object-contain w-3/5" />
+        <Image src={myImage} alt="" className="object-contain lg:w-3/5 sm:w-4/5" />
       </motion.div>
     </motion.div>
   );
