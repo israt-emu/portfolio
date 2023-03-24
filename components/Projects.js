@@ -23,9 +23,9 @@ const Projects = () => {
   };
   return (
     <div className="md:w-9/12 mx-auto py-8">
-      <div className="flex items-center justify-center">
+      <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={projectVariants} className="flex items-center justify-center">
         <h1 className="text-2xl font-bold sm:text-4xl text-title mb-4">Some Projects I’ve Built</h1>
-      </div>
+      </motion.div>
       {/* //library  */}
       <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={projectVariants} className="flex flex-col lg:flex-row items-center justify-center my-16 p-6 md:p-10 bg-slate-600/20 ring-1 ring-blue-400/20 rounded-2xl  backdrop-blur-sm">
         <Image src={library} alt="" className="lg:w-1/2 mb-4 lg:mb-0 border border-gray-700" />

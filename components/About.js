@@ -34,7 +34,7 @@ const About = () => {
           <h1 className="text-3xl font-semibold leading-none text-title ml-3">About Me</h1>
         </div>
 
-        <p className="mt-6 mb-4 text-md sm:mb-8 text-small_text">
+        <div className="mt-6 mb-4 text-md sm:mb-8 text-small_text">
           Hello! My name is Israt Jahan Emu. Currently, I’m taking part in a master’s degree program at Noakhali Science & Technology University in <span className="text-primary font-medium">Applied Mathematics</span>.
           <br className="hidden lg:flex" />
           I’m fascinated by Programming. It excites me to write and read code. No matter how difficult, any programming problem excites me, and I enjoy thinking about its solution. Designing and developing websites is also a passion of mine since it is a part of programming. <br className="hidden lg:flex" />
@@ -42,18 +42,18 @@ const About = () => {
           <br className="hidden lg:flex" />I also love to____
           <div className="flex flex-col sm:flex-row sm:items-center">
             <div className="flex items-center mr-3">
-              <MdMovie className="text-lg mr-1 text-primary" /> <p className="font-medium">Watch movie</p>
+              <MdMovie className="text-lg mr-1 text-primary" /> <div className="font-medium">Watch movie</div>
             </div>
             <div className="flex items-center mr-3">
               <FcReading className="text-lg mr-1" />
-              <p className="font-medium">Read books</p>
+              <div className="font-medium">Read books</div>
             </div>
             <div className="flex items-center">
               <FaRunning className="text-lg mr-1 text-primary" />
-              <p className="font-medium">Travel</p>
+              <div className="font-medium">Travel</div>
             </div>
           </div>
-        </p>
+        </div>
       </div>
     </motion.div>
   );
