@@ -13,16 +13,19 @@ import Projects from "../components/Projects";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="">
       <Navigation />
-      <Banner />
-      <About />
-      <Work />
-      <Skills />
-      <Projects />
-      <Education />
-      <Contact />
-      <Footer />
+
+      <div className="px-6">
+        <Banner />
+        <About />
+        <Work />
+        <Skills />
+        <Projects />
+        <Education />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }

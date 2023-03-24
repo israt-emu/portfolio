@@ -23,7 +23,7 @@ const About = () => {
     },
   };
   return (
-    <motion.div className="sm:w-10/12  flex flex-col justify-center px-6 mx-auto sm:pt-14 pb-10 md:my-20 lg:flex-row  lg:items-center items-start bg-slate-600/20 ring-1 ring-blue-400/20 rounded-2xl  backdrop-blur-sm" initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={aboutVariants}>
+    <motion.div className="sm:w-10/12 xs:w-full flex flex-col justify-center px-6 mx-auto sm:pt-14 pb-10 md:my-20 lg:flex-row  lg:items-center items-start bg-slate-600/20 ring-1 ring-blue-400/20 rounded-2xl  backdrop-blur-sm" initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={aboutVariants}>
       <div className="flex items-center mt-12 sm:mt-8 lg:mt-0 lg:w-2/5 relative ">
         <div className="border-2 border-primary rounded w-[300px] h-72"></div>
         <Image src={myImage} alt="" className="object-contain -top-6 left-5 lg:w-3/4 2xl:w-2/5 absolute rounded" />

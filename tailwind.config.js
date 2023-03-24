@@ -16,6 +16,9 @@ module.exports = {
       fontFamily: {
         nunito: ["var(--font-nunito)", ...fontFamily.sans],
       },
+      screens: {
+        xs: "320px",
+      },
     },
   },
   plugins: [],

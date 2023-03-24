@@ -34,7 +34,7 @@ const Navigation = () => {
   };
   return (
     <header className=" p-2 rounded-lg dark:text-gray-100 text-title bg-white/5 backdrop-blur-lg sticky top-0 z-50">
-      <div className="container flex justify-between h-12 mx-auto ">
+      <div className="lg:container flex justify-between h-12 mx-auto ">
         <motion.div
           initial={{opacity: 0, scale: 0}}
           animate={{opacity: 1, scale: 1}}
