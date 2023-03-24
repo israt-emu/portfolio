@@ -23,7 +23,7 @@ const Banner = () => {
           duration: 1,
           delay: 0.4,
         }}
-        className="flex flex-col justify-center md:p-6 rounded-sm lg:max-w-md xl:max-w-lg lg:text-left"
+        className="flex flex-col justify-center md:p-6 rounded-sm lg:max-w-md xl:max-w-lg lg:text-left mt-8 lg:mt-0"
       >
         <p className="text-title">Hi, my name is</p>
         <h1 className="text-5xl font-bold leading-none sm:text-6xl text-title">Israt Jahan</h1>
@@ -57,7 +57,7 @@ const Banner = () => {
           duration: 1,
           delay: 0.5,
         }}
-        className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 sm:mb-6 lg:mb-0"
+        className="flex items-center justify-center md:p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 sm:mb-6 lg:mb-0"
       >
         <Image src={myImage} alt="" className="object-contain w-3/5" />
       </motion.div>

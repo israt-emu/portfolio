@@ -22,7 +22,7 @@ const Skills = () => {
     },
   };
   return (
-    <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={skillVariants} className="mx-auto lg:w-9/12 py-8 lg:px-6">
+    <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={skillVariants} className="mx-auto w-full lg:w-9/12 py-8 lg:px-6">
       <div className="flex items-center">
         <Image src={skills} alt="" className="w-12 mr-3" />
         <h2 className="text-2xl font-bold sm:text-4xl text-title mb-4 text-center">Skills That I have</h2>
@@ -45,7 +45,7 @@ const Skills = () => {
             Design Tools
           </button>
         </div>
-        <div className="text-center  col-span-full md:col-span-4 md:text-left pt-4 border-t-2 border-slate-700">
+        <div className="text-center  col-span-full md:col-span-4 md:text-left pt-4 sm:border-t-2 sm:border-slate-700">
           {active === "programming" && <Programming />}
           {active === "frontend" && <Frontend />}
           {active === "backend" && <Backend />}

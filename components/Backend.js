@@ -4,7 +4,7 @@ import express from "../assets/images/express.jpg";
 import mongodb from "../assets/images/mongodb.png";
 const Backend = () => {
   return (
-    <div className="grid grid-cols-4 gap-5 w-full ">
+    <div className="grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-5 w-full ">
       <div className="flex justify-start items-center bg-small_bg p-2 text-small_text h-10 shadow-lg rounded skillbg">
         <Image src={node} alt="c programming" className="w-6 h-6 rounded-full" />
         <p className="ml-3"> Node JS</p>

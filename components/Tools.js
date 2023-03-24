@@ -6,7 +6,7 @@ import firebase from "../assets/images/firebase.png";
 
 const Tools = () => {
   return (
-    <div className="grid grid-cols-4 gap-5 w-full ">
+    <div className="grid lg:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-5 w-full ">
       <div className="flex justify-start items-center bg-small_bg p-2 text-small_text h-10 shadow-lg rounded skillbg">
         <Image src={vsCode} alt="c programming" className="w-6 h-6 rounded-full" />
         <p className="ml-3">VS Code</p>
