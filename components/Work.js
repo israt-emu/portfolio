@@ -20,12 +20,12 @@ const Work = () => {
   };
   return (
     <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={workVariants} className="sm:w-4/5 lg:w-9/12 flex flex-col justify-center px-6 py-20 mx-auto text-title container">
-      <div className="flex items-center">
+      <div className="flex items-center md:mb-4">
         <Image src={intern} alt="" className="w-14 mr-3" />
-        <h1 className="text-2xl font-bold sm:text-4xl text-title mb-4">Where I have worked</h1>
+        <h1 className="text-2xl font-bold sm:text-4xl text-title">Where I have worked</h1>
       </div>
 
-      <div className="py-12 mx-auto max-w-5xl">
+      <div className="md:py-12 pb-12 pt-8 mx-auto max-w-5xl">
         <div className="grid gap-4 sm:grid-cols-12">
           <div className="col-span-12 sm:col-span-3">
             <div className="text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-0 before:bg-primary">
