@@ -28,7 +28,7 @@ const Work = () => {
       <div className="md:py-12 pb-12 pt-8 mx-auto max-w-5xl">
         <div className="grid gap-4 sm:grid-cols-12">
           <div className="col-span-12 sm:col-span-3">
-            <div className="text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-0 before:bg-primary">
+            <div className="text-left mb-14">
               <Image src={zivaka} className="w-8 h-8 mr-3 mb-2" alt="Zivaka Image" />
               <Link href="https://www.facebook.com/zivaka.llp" target="blank">
                 <div className="flex items-center">
