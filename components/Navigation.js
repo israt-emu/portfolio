@@ -11,17 +11,10 @@ const Navigation = () => {
         delayChildren: 0.2,
         staggerChildren: 0.2,
         delay: 0.4,
-        // type: "tween",
-        // duration: 0.5,
-        // ease: "linear",
+       
       },
     },
-    // animate: {
-    //   transition: {
-    //     delayChildren: 0.4,
-    //     staggerChildren: 0.1,
-    //   },
-    // },
+
   };
   const item = {
     hidden: {opacity: 0},
