@@ -59,7 +59,7 @@ const Banner = () => {
         }}
         className="flex items-center justify-center md:p-6 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 sm:mb-6 lg:mb-0"
       >
-        <Image src={myImage} alt="" className="object-contain lg:w-3/5 sm:w-4/5" />
+        <Image src={myImage} alt="" className="object-contain w-full sm:w-4/5 lg:w-3/5 " />
       </motion.div>
     </motion.div>
   );
