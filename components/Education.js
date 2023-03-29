@@ -2,6 +2,7 @@ import Image from "next/image";
 import nstu_logo from "../assets/images/nstu.png";
 import sa_logo from "../assets/images/sa.jpg";
 import nstu from "../assets/images/fountain_pen.jpg";
+import study from "../assets/images/study.png";
 import sa from "../assets/images/sa-image.jpg";
 import {BiLinkExternal} from "react-icons/bi";
 import Link from "next/link";
@@ -9,7 +10,8 @@ const Education = () => {
   return (
     <div className="sm:w-9/12 mx-auto py-16 lg:container">
       <div className="flex items-center">
-        <h1 className="text-2xl font-bold sm:text-4xl text-title mb-4 mr-3">Where I’ve Studied</h1>
+        <Image src={study} alt="" className="w-12 mr-2" />
+        <h1 className="text-2xl font-bold sm:text-4xl text-title mr-3">Where I’ve Studied</h1>
         <hr className="border border-slate-700 w-1/5" />
       </div>
       <div className="flex flex-col pt-8">
