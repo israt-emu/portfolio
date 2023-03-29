@@ -14,7 +14,7 @@ const Banner = () => {
     },
   };
   return (
-    <motion.div variants={banner} className="container flex flex-col-reverse justify-center md:p-6 mx-auto sm:py-4 lg:flex-row lg:justify-between lg:ml-8 items-center h-screen">
+    <motion.div variants={banner} className="container flex flex-col-reverse justify-center md:p-6 mx-auto py-4 lg:flex-row lg:justify-between lg:ml-8 items-center h-screen">
       <motion.div
         initial={{opacity: 0, y: 80}}
         animate={{opacity: 1, y: 0}}
@@ -59,7 +59,7 @@ const Banner = () => {
         }}
         className="flex items-center justify-center md:p-6 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 sm:mb-6 lg:mb-0"
       >
-        <Image width={300} src={myImage} alt="" className="object-contain lg:w-3/5 sm:w-2/5" />
+        <Image width={200} src={myImage} alt="" className="object-contain lg:w-3/5 sm:w-2/5 mt-8" />
       </motion.div>
     </motion.div>
   );
