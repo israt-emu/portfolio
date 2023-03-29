@@ -35,13 +35,13 @@ const Banner = () => {
           <span className="text-xl text-title">2.5 </span> years of Experience
         </p>
         <div className="flex items-center mb-4 text-small_text ">
-          <Link href="https://www.facebook.com/profile.php?id=100024239881205">
+          <Link href="https://www.facebook.com/profile.php?id=100024239881205" target="blank">
             <BsFacebook className="w-8 mr-2" />
           </Link>
-          <Link href="https://www.linkedin.com/in/israt-jahan-462788222/">
+          <Link href="https://www.linkedin.com/in/israt-jahan-462788222/" target="blank">
             <BsLinkedin className="w-8 mr-2" />
           </Link>
-          <Link href="https://github.com/israt-emu">
+          <Link href="https://github.com/israt-emu" target="blank">
             <BsGithub className="w-8 mr-3" />
           </Link>
         </div>

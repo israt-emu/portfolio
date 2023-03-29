@@ -12,10 +12,8 @@ const Navigation = () => {
         delayChildren: 0.2,
         staggerChildren: 0.2,
         delay: 0.4,
-       
       },
     },
-
   };
   const item = {
     hidden: {opacity: 0},
@@ -27,7 +25,7 @@ const Navigation = () => {
     },
   };
   return (
-    <header className=" p-2 rounded-lg dark:text-gray-100 text-title bg-white/5 backdrop-blur-lg sticky top-0 z-50">
+    <header className=" p-2 dark:text-gray-100 text-title bg-white/5 backdrop-blur-lg sticky top-0 z-50">
       <div className="lg:container flex justify-between h-12 mx-auto ">
         <motion.div
           initial={{opacity: 0, scale: 0}}

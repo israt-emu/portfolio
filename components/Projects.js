@@ -22,7 +22,7 @@ const Projects = () => {
     },
   };
   return (
-    <div className="md:w-9/12 mx-auto py-8">
+    <div className="md:w-9/12 mx-auto py-8 lg:container">
       <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={projectVariants} className="flex items-center justify-center">
         <h1 className="text-2xl font-bold sm:text-4xl text-title mb-4">Some Projects I’ve Built</h1>
       </motion.div>
@@ -30,8 +30,11 @@ const Projects = () => {
       <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={projectVariants} className="flex flex-col lg:flex-row items-center justify-center my-16 p-6 md:p-10 bg-slate-600/20 ring-1 ring-blue-400/20 rounded-2xl  backdrop-blur-sm">
         <Image src={library} alt="" className="lg:w-1/2 mb-4 lg:mb-0 border border-gray-700" />
         <div>
+          <h1 className="text-primary text-md font-semibold text-right">Fullstack</h1>
           <h1 className="text-title text-2xl text-right font-semibold">Library Management Website</h1>
-          <p className="bg-white/5 p-4 text-small_text ring-1 ring-slate-50/40 rounded ml-3 mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi distinctio harum perspiciatis libero facilis dolorum quisquam sed omnis, atque obcaecati animi qui sint sunt ipsam est eius doloremque expedita quas.</p>
+          <p className="bg-white/5 p-4 text-small_text ring-1 ring-slate-50/40 rounded ml-3 mt-4">
+            A library managemnet website where user can search & borrow book,request a new book,add articles.Admin can manage all user & all books and send real time notification to all user.Analytics page includes top borrowed & requested books and top books and also monthly analytics of borrowed books.This site includes jwt Token based authentication.
+          </p>
           <p className="flex flex-wrap items-center text-primary text-sm font-semibold justify-end mt-3">
             <span className="mr-3">React</span>
             <span className="mr-3">JWT</span>
@@ -42,13 +45,13 @@ const Projects = () => {
             <span>MongoDB</span>
           </p>
           <div className="flex items-center mt-3 mb-4 text-small_text justify-end">
-            <Link href="https://github.com/israt-emu">
+            <Link href="https://github.com/israt-emu/Library-management-frontend" target="blank">
               <BsGithub className="text-lg mr-3" title="Frontend Code" />
             </Link>
-            <Link href="https://github.com/israt-emu">
+            <Link href="https://github.com/israt-emu/Library-management-backend" target="blank">
               <BsGithub className="text-lg mr-3" title="Backend Code" />
             </Link>
-            <Link href="https://www.linkedin.com/in/israt-jahan-462788222/">
+            <Link href="https://amathlib.netlify.app/" target="blank">
               <BiLinkExternal className="text-lg" title="Live Site" />
             </Link>
           </div>
@@ -57,8 +60,12 @@ const Projects = () => {
       {/* lipstick */}
       <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={projectVariants} className="flex flex-col-reverse lg:flex-row items-center justify-center my-16 p-6 md:p-10 bg-slate-600/20 ring-1 ring-blue-400/20 rounded-2xl  backdrop-blur-sm">
         <div>
+          <h1 className="text-primary text-md font-semibold">Fullstack</h1>
           <h1 className="text-title text-2xl text-left font-semibold">Lipstick Selling Website</h1>
-          <p className="bg-white/5 p-4 text-small_text ring-1 ring-slate-50/40 rounded mr-3 mt-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi distinctio harum perspiciatis libero facilis dolorum quisquam sed omnis, atque obcaecati animi qui sint sunt ipsam est eius doloremque expedita quas.</p>
+          <p className="bg-white/5 p-4 text-small_text ring-1 ring-slate-50/40 rounded mr-3 mt-4">
+            {" "}
+            A Lipstick selling website for buyer. This website includes user dashboard from where buyer can see his/her ordered product , review this site. Also, there is an admin dashboard from where admin can manage all product, make admin other users. This site includes OAuth and Email-Password based authentication.
+          </p>
           <p className="flex items-center text-primary text-sm font-semibold justify-start mt-3 flex-wrap">
             <span className="mr-3">React</span>
             <span className="mr-3">Firebase</span>
@@ -68,13 +75,13 @@ const Projects = () => {
             <span>MongoDB</span>
           </p>
           <div className="flex items-center mt-3 mb-4 text-small_text justify-start">
-            <Link href="https://github.com/israt-emu">
+            <Link href="https://github.com/israt-emu/bloom-lips" target="blank">
               <BsGithub className="text-lg mr-3" title="Frontend Code" />
             </Link>
-            <Link href="https://github.com/israt-emu">
+            <Link href="https://github.com/israt-emu" target="blank">
               <BsGithub className="text-lg mr-3" title="Backend Code" />
             </Link>
-            <Link href="https://www.linkedin.com/in/israt-jahan-462788222/">
+            <Link href="https://bloom-lips.web.app/" target="blank">
               <BiLinkExternal className="text-lg" title="Live Site" />
             </Link>
           </div>
@@ -85,8 +92,9 @@ const Projects = () => {
       <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={projectVariants} className="flex flex-col lg:flex-row items-center justify-center my-16 p-6 md:p-10 bg-slate-600/20 ring-1 ring-blue-400/20 rounded-2xl  backdrop-blur-sm">
         <Image src={travel} alt="" className="lg:w-1/2 mb-4 lg:mb-0" />
         <div>
+          <h1 className="text-primary text-md font-semibold text-right">Fullstack</h1>
           <h1 className="text-title text-2xl text-right font-semibold">Tour Management Website</h1>
-          <p className="bg-white/5 p-4 text-small_text ring-1 ring-slate-50/40 rounded ml-3 mt-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi distinctio harum perspiciatis libero facilis dolorum quisquam sed omnis, atque obcaecati animi qui sint sunt ipsam est eius doloremque expedita quas.</p>
+          <p className="bg-white/5 p-4 text-small_text ring-1 ring-slate-50/40 rounded ml-3 mt-4"> A travel agency website for arranging tour. People can book any tour to any place.Also,there is an admin dashboard & user dashboard. User can manage his/her booked tour. Admin can manage all tour and add new tour plan.This site includes OAuth based authentication.</p>
           <p className="flex flex-wrap items-center text-primary text-sm font-semibold justify-end mt-3">
             <span className="mr-3">React</span>
             <span className="mr-3">Firebase</span>
@@ -96,13 +104,13 @@ const Projects = () => {
             <span>MongoDB</span>
           </p>
           <div className="flex items-center mt-3 mb-4 text-small_text justify-end">
-            <Link href="https://github.com/israt-emu">
+            <Link href="https://github.com/israt-emu/travely" target="blank">
               <BsGithub className="text-lg mr-3" title="Frontend Code" />
             </Link>
-            <Link href="https://github.com/israt-emu">
+            <Link href="https://github.com/israt-emu" target="blank">
               <BsGithub className="text-lg mr-3" title="Backend Code" />
             </Link>
-            <Link href="https://www.linkedin.com/in/israt-jahan-462788222/">
+            <Link href="https://travely-217e4.web.app/" target="blank">
               <BiLinkExternal className="text-lg" title="Live Site" />
             </Link>
           </div>
@@ -111,24 +119,20 @@ const Projects = () => {
       {/* happy mom  */}
       <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true}} variants={projectVariants} className="flex flex-col-reverse lg:flex-row items-center justify-center my-16 p-6 md:p-10 bg-slate-600/20 ring-1 ring-blue-400/20 rounded-2xl  backdrop-blur-sm">
         <div>
+          <h1 className="text-primary text-md font-semibold">Frontend</h1>
           <h1 className="text-title text-2xl text-left font-semibold">Pregnancy Care Website</h1>
-          <p className="bg-white/5 p-4 text-small_text ring-1 ring-slate-50/40 rounded mr-3 mt-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi distinctio harum perspiciatis libero facilis dolorum quisquam sed omnis, atque obcaecati animi qui sint sunt ipsam est eius doloremque expedita quas.</p>
+          <p className="bg-white/5 p-4 text-small_text ring-1 ring-slate-50/40 rounded mr-3 mt-4">A frontend health care website specially for pregnant women. This websites includes OAuth based login, Email & Password based signup, Private routing & Beautiful Design. </p>
           <p className="flex flex-wrap items-center text-primary text-sm font-semibold justify-start mt-3">
             <span className="mr-3">React</span>
             <span className="mr-3">Firebase</span>
             <span className="mr-3">Tailwind</span>
-            <span className="mr-3">Node</span>
-            <span className="mr-3">Express</span>
-            <span>MongoDB</span>
           </p>
           <div className="flex items-center mt-3 mb-4 text-small_text justify-start">
-            <Link href="https://github.com/israt-emu">
+            <Link href="https://github.com/israt-emu/happy-mom" target="blank">
               <BsGithub className="text-lg mr-3" title="Frontend Code" />
             </Link>
-            <Link href="https://github.com/israt-emu">
-              <BsGithub className="text-lg mr-3" title="Backend Code" />
-            </Link>
-            <Link href="https://www.linkedin.com/in/israt-jahan-462788222/">
+
+            <Link href="https://happy-mom-1027a.web.app/" target="blank">
               <BiLinkExternal className="text-lg" title="Live Site" />
             </Link>
           </div>

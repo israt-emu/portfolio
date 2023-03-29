@@ -14,9 +14,7 @@ import Projects from "../components/Projects";
 export default function Home() {
   return (
     <div className="">
-      <Navigation />
-
-      <div className="px-6">
+      <div className="px-4">
         <Banner />
         <About />
         <Work />
@@ -24,7 +22,6 @@ export default function Home() {
         <Projects />
         <Education />
         <Contact />
-        <Footer />
       </div>
     </div>
   );
