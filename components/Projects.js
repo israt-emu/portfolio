@@ -82,7 +82,7 @@ const Projects = () => {
             <Link href="https://github.com/israt-emu/bloom-lips" target="blank">
               <BsGithub className="text-lg mr-3" title="Frontend Code" />
             </Link>
-            <Link href="https://github.com/israt-emu" target="blank">
+            <Link href="https://github.com/israt-emu/bloom-lips-server" target="blank">
               <BsGithub className="text-lg mr-3" title="Backend Code" />
             </Link>
             <Link href="https://bloom-lips.web.app/" target="blank">
@@ -111,7 +111,7 @@ const Projects = () => {
             <Link href="https://github.com/israt-emu/travely" target="blank">
               <BsGithub className="text-lg mr-3" title="Frontend Code" />
             </Link>
-            <Link href="https://github.com/israt-emu" target="blank">
+            <Link href="https://github.com/israt-emu/travely-server" target="blank">
               <BsGithub className="text-lg mr-3" title="Backend Code" />
             </Link>
             <Link href="https://travely-217e4.web.app/" target="blank">
