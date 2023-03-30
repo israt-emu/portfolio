@@ -25,22 +25,22 @@ const Banner = () => {
         }}
         className="flex flex-col justify-center md:p-6 rounded-sm lg:max-w-md xl:max-w-lg lg:text-left mt-8 lg:mt-0"
       >
-        <p className="text-title font-mono">
+        <div className="text-title font-mono">
           <span className="text-xl">👋</span> Hi, my name is
-        </p>
+        </div>
         <h1 className="text-5xl font-bold leading-none sm:text-6xl text-title">Israt Jahan</h1>
-        <p className="mt-6 mb-2 text-lg text-small_text flex justify-center ">
+        <div className="mt-6 mb-2 text-lg text-small_text flex justify-center ">
           Particularly I’m interested in learning and staying <br className="hidden lg:flex" /> current about programming and technological advancements. Also, I enjoy creating things
           <br className="hidden lg:flex" /> that live on the internet.
-        </p>
-        <p className="flex items-center">
-          <p className="mb-3 text-small_text font-mono mr-3">
+        </div>
+        <div className="flex items-center">
+          <div className="mb-3 text-small_text font-mono mr-3">
             <span className="text-xl text-sky-400">2.5 </span> years of Experience
-          </p>
-          <p className="mb-3 text-small_text font-mono">
+          </div>
+          <div className="mb-3 text-small_text font-mono">
             <span className="text-xl text-indigo-600">10+ </span> Projects
-          </p>
-        </p>
+          </div>
+        </div>
         <div className="flex items-center mb-4 text-small_text ">
           <Link href="https://www.facebook.com/profile.php?id=100024239881205" target="blank">
             <BsFacebook className="w-8 mr-2 " />
