@@ -93,7 +93,7 @@ const Navigation = () => {
         </div>
       </div>
       {/* ///mobile menu  */}
-      <div className={`${open ? "flex" : "hidden"} justify-between backdrop-blur-sm skillbg border border-gray-700 px-4 rounded-md lg:hidden h-full w-9/12`}>
+      <div className={`${open ? "flex" : "hidden"} justify-between backdrop-blur-sm skillbg border border-gray-700 px-4 rounded-md lg:hidden h-full w-9/12 mt-4`}>
         <ul className="items-stretch flex flex-col space-x-3">
           <li className="flex items-center">
             <Link href="#about" className="flex items-center hover:bg-gray-500/30 pl-4 pt-3 pb-1 rounded">
