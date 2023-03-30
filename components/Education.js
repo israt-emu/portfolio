@@ -12,7 +12,7 @@ const Education = () => {
       <div className="flex items-center">
         <Image src={study} alt="" className="w-12 mr-2" />
         <h1 className="text-xl font-bold sm:text-4xl text-title mr-3">Where I’ve Studied</h1>
-        <hr className="border border-slate-700 w-1/5" />
+        <hr className="border-t border-gray-700 w-1/5 mt-2" />
       </div>
       <div className="flex flex-col pt-8">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 md:gap-12 items-center">

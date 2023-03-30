@@ -12,6 +12,7 @@ module.exports = {
         title: "var(--title-color)",
         small_text: "var(--small-text-color)",
         small_bg: "var(--small-bg-color)",
+        hover_color: "var(--hover-color)",
       },
       fontFamily: {
         merri: ["var(--font-merri)", ...fontFamily.sans],

@@ -23,6 +23,7 @@ const Work = () => {
       <div className="flex items-center md:mb-4">
         <Image src={intern} alt="" className="w-12 mr-3" />
         <h1 className="text-xl font-bold sm:text-4xl text-title">Where I have worked</h1>
+        <hr className="border-t border-gray-700 w-1/5 mt-2 ml-3" />
       </div>
 
       <div className="md:py-12 pb-12 pt-8 mx-auto max-w-5xl">

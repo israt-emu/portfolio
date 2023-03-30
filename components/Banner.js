@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import myImage from "../assets/images/undraw_dev_focus_re_6iwt.svg";
+import myImage from "../assets/images/undraw_software_engineer_re_tnjc.svg";
 import {BsFacebook, BsLinkedin, BsGithub} from "react-icons/bs";
 import {motion} from "framer-motion";
 
@@ -46,7 +46,7 @@ const Banner = () => {
           </Link>
         </div>
         <div className="items-center flex-shrink-0 lg:flex">
-          <button className="px-4 py-2 rounded border-2 border-primary text-primary font-mono">Explore My Projects</button>
+          <button className="px-4 py-2 rounded border-2 border-primary text-primary font-mono hover:bg-hover_color">Explore My Projects</button>
         </div>
       </motion.div>
       <motion.div
@@ -59,7 +59,7 @@ const Banner = () => {
         }}
         className="flex items-center justify-center md:p-6 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 sm:mb-6 lg:mb-0"
       >
-        <Image width={400} src={myImage} alt="" className="object-contain lg:w-3/5 sm:w-2/5 mt-8" />
+        <Image width={400} src={myImage} alt="" className="object-contain sm:w-4/5 mt-8" />
       </motion.div>
     </motion.div>
   );

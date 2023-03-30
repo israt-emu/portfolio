@@ -86,7 +86,7 @@ const Navigation = () => {
         </div>
         <div className="flex items-center">
           <div className="items-center flex-shrink-0 hidden lg:flex lg:ml-3">
-            <motion.button variants={nav} className="px-3 py-1 rounded border-2 border-primary text-primary font-medium">
+            <motion.button variants={nav} className="px-3 py-1 rounded border-2 border-primary text-primary font-medium  hover:bg-hover_color">
               Resume
             </motion.button>
           </div>
@@ -122,7 +122,7 @@ const Navigation = () => {
           </li>
           <li className="flex items-center">
             <div className="items-center flex-shrink-0  flex my-3">
-              <button variants={nav} className="px-3 py-1 rounded border-2 border-primary text-primary font-medium">
+              <button variants={nav} className="px-3 py-1 rounded border-2 border-primary text-primary font-medium hover:bg-hover_color">
                 Resume
               </button>
             </div>

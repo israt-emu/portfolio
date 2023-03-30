@@ -32,6 +32,7 @@ const About = () => {
         <div className="flex items-center">
           <Image src={about} alt="" className="w-4 sm:w-7 mr-2" />
           <h1 className="text-xl sm:text-3xl font-semibold leading-none text-title ml-3">About Me</h1>
+          <hr className="border-t border-gray-700 w-1/5 mt-2 ml-2" />
         </div>
 
         <div className="mt-6 mb-4 text-md sm:mb-8 text-small_text">

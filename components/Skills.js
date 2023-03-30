@@ -26,6 +26,7 @@ const Skills = () => {
       <div className="flex items-center mb-6">
         <Image src={skills} alt="" className="w-12 mr-3" />
         <h2 className="text-xl font-bold sm:text-4xl text-title text-center">Skills That I have</h2>
+        <hr className="border-t border-gray-700 w-1/5 mt-2 ml-3" />
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 md:py-8 justify-start">
         <Programming />
