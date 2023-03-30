@@ -19,10 +19,10 @@ const Work = () => {
     },
   };
   return (
-    <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={workVariants} className="sm:w-4/5 lg:w-9/12 flex flex-col justify-center px-6 py-20 mx-auto text-title lg:container">
+    <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={workVariants} className="sm:w-4/5 lg:w-9/12 flex flex-col justify-center px-6 py-20 mx-auto text-title lg:container" id="work">
       <div className="flex items-center md:mb-4">
         <Image src={intern} alt="" className="w-12 mr-3" />
-        <h1 className="text-2xl font-bold sm:text-4xl text-title">Where I have worked</h1>
+        <h1 className="text-xl font-bold sm:text-4xl text-title">Where I have worked</h1>
       </div>
 
       <div className="md:py-12 pb-12 pt-8 mx-auto max-w-5xl">

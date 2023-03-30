@@ -1,6 +1,10 @@
 import Image from "next/image";
 import logo from "../assets/images/Israt2.png";
 import {motion} from "framer-motion";
+import Link from "next/link";
+import {AiOutlineMenu} from "react-icons/ai";
+import {ImCross} from "react-icons/im";
+import {useState} from "react";
 
 const Navigation = () => {
   //comment
@@ -24,9 +28,10 @@ const Navigation = () => {
       ease: "easeIn",
     },
   };
+  const [open, setOpen] = useState(false);
   return (
     <header className=" p-2 dark:text-gray-100 text-title bg-white/5 backdrop-blur-lg sticky top-0 z-50">
-      <div className="lg:container flex justify-between h-12 mx-auto ">
+      <div className="lg:container flex justify-between h-12 ">
         <motion.div
           initial={{opacity: 0, scale: 0}}
           animate={{opacity: 1, scale: 1}}
@@ -51,37 +56,80 @@ const Navigation = () => {
             variants={item}
             className="flex items-center"
           >
-            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+            <Link href="#about" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
               About
-            </a>
+            </Link>
           </motion.li>
           <motion.li variants={item} className="flex items-center">
-            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+            <Link href="#work" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
               Experience
-            </a>
+            </Link>
           </motion.li>
           <motion.li variants={item} className="flex items-center">
-            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
-              Project
-            </a>
+            <Link href="#projects" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+              Projects
+            </Link>
           </motion.li>
           <motion.li variants={item} className="flex items-center">
-            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+            <Link href="#education" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
               Education
-            </a>
+            </Link>
           </motion.li>
           <motion.li variants={item} className="flex items-center">
-            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+            <Link href="#contact" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
               Contact
-            </a>
+            </Link>
           </motion.li>
         </motion.ul>
+        <div className="flex justify-end items-center lg:hidden ml-auto mr-4">
+          <AiOutlineMenu className="text-xl font-bold text-primary cursor-pointer" onClick={() => setOpen(true)} />
+        </div>
         <div className="flex items-center">
-          <div className="items-center flex-shrink-0 hidden lg:flex ml-3">
+          <div className="items-center flex-shrink-0 hidden lg:flex lg:ml-3">
             <motion.button variants={nav} className="px-3 py-1 rounded border-2 border-primary text-primary font-medium">
               Resume
             </motion.button>
           </div>
+        </div>
+      </div>
+      {/* ///mobile menu  */}
+      <div className={`${open ? "flex" : "hidden"} justify-between backdrop-blur-sm skillbg border border-gray-700 px-4 rounded-md lg:hidden h-full w-9/12`}>
+        <ul className="items-stretch flex flex-col space-x-3">
+          <li className="flex items-center">
+            <Link href="#about" className="flex items-center hover:bg-gray-500/30 pl-4 pt-3 pb-1 rounded">
+              About
+            </Link>
+          </li>
+          <li className="flex items-center">
+            <Link href="#work" className="flex items-center hover:bg-gray-500/30 py-1 rounded">
+              Experience
+            </Link>
+          </li>
+          <li className="flex items-center">
+            <Link href="#projects" className="flex items-center hover:bg-gray-500/30 py-1 rounded">
+              Projects
+            </Link>
+          </li>
+          <li className="flex items-center">
+            <Link href="#education" className="flex items-center hover:bg-gray-500/30 py-1 rounded">
+              Education
+            </Link>
+          </li>
+          <li className="flex items-center">
+            <Link href="#contact" className="flex items-center hover:bg-gray-500/30 py-1 rounded">
+              Contact
+            </Link>
+          </li>
+          <li className="flex items-center">
+            <div className="items-center flex-shrink-0  flex my-3">
+              <button variants={nav} className="px-3 py-1 rounded border-2 border-primary text-primary font-medium">
+                Resume
+              </button>
+            </div>
+          </li>
+        </ul>
+        <div className="mt-4">
+          <ImCross onClick={() => setOpen(false)} />
         </div>
       </div>
     </header>
