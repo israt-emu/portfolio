@@ -25,13 +25,13 @@ const Banner = () => {
         }}
         className="flex flex-col justify-center md:p-6 rounded-sm lg:max-w-md xl:max-w-lg lg:text-left mt-8 lg:mt-0"
       >
-        <p className="text-title">Hi, my name is</p>
+        <p className="text-title font-mono">Hi, my name is</p>
         <h1 className="text-5xl font-bold leading-none sm:text-6xl text-title">Israt Jahan</h1>
-        <p className="mt-6 mb-2 text-lg text-small_text flex justify-center">
+        <p className="mt-6 mb-2 text-lg text-small_text flex justify-center ">
           Particularly I’m interested in learning and staying <br className="hidden lg:flex" /> current about programming and technological advancements. Also, I enjoy creating things
           <br className="hidden lg:flex" /> that live on the internet.
         </p>
-        <p className="mb-3 text-small_text">
+        <p className="mb-3 text-small_text font-mono">
           <span className="text-xl text-title">2.5 </span> years of Experience
         </p>
         <div className="flex items-center mb-4 text-small_text ">
@@ -46,7 +46,7 @@ const Banner = () => {
           </Link>
         </div>
         <div className="items-center flex-shrink-0 lg:flex">
-          <button className="px-4 py-2 rounded border-2 border-primary text-primary ">Explore My Projects</button>
+          <button className="px-4 py-2 rounded border-2 border-primary text-primary font-mono">Explore My Projects</button>
         </div>
       </motion.div>
       <motion.div

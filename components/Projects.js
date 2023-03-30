@@ -35,7 +35,7 @@ const Projects = () => {
           <p className="bg-white/5 p-4 text-small_text ring-1 ring-slate-50/40 rounded ml-3 mt-4">
             A library managemnet website where user can search & borrow book,request a new book,add articles.Admin can manage all user & all books and send real time notification to all user.Analytics page includes top borrowed & requested books and top books and also monthly analytics of borrowed books.This site includes jwt Token based authentication.
           </p>
-          <p className="flex flex-wrap items-center text-primary text-sm font-semibold justify-end mt-3">
+          <p className="flex flex-wrap items-center text-primary text-sm font-semibold justify-end mt-3 font-mono">
             <span className="mr-3">React</span>
             <span className="mr-3">JWT</span>
             <span className="mr-3">Redux</span>
@@ -66,7 +66,7 @@ const Projects = () => {
             {" "}
             A Lipstick selling website for buyer. This website includes user dashboard from where buyer can see his/her ordered product , review this site. Also, there is an admin dashboard from where admin can manage all product, make admin other users. This site includes OAuth and Email-Password based authentication.
           </p>
-          <p className="flex items-center text-primary text-sm font-semibold justify-start mt-3 flex-wrap">
+          <p className="flex items-center text-primary text-sm font-semibold justify-start mt-3 flex-wrap font-mono">
             <span className="mr-3">React</span>
             <span className="mr-3">Firebase</span>
             <span className="mr-3">Tailwind</span>
@@ -95,7 +95,7 @@ const Projects = () => {
           <h1 className="text-primary text-md font-semibold text-right">Fullstack</h1>
           <h1 className="text-title text-2xl text-right font-semibold">Tour Management Website</h1>
           <p className="bg-white/5 p-4 text-small_text ring-1 ring-slate-50/40 rounded ml-3 mt-4"> A travel agency website for arranging tour. People can book any tour to any place.Also,there is an admin dashboard & user dashboard. User can manage his/her booked tour. Admin can manage all tour and add new tour plan.This site includes OAuth based authentication.</p>
-          <p className="flex flex-wrap items-center text-primary text-sm font-semibold justify-end mt-3">
+          <p className="flex flex-wrap items-center text-primary text-sm font-semibold justify-end mt-3 font-mono">
             <span className="mr-3">React</span>
             <span className="mr-3">Firebase</span>
             <span className="mr-3">Tailwind</span>
@@ -122,7 +122,7 @@ const Projects = () => {
           <h1 className="text-primary text-md font-semibold">Frontend</h1>
           <h1 className="text-title text-2xl text-left font-semibold">Pregnancy Care Website</h1>
           <p className="bg-white/5 p-4 text-small_text ring-1 ring-slate-50/40 rounded mr-3 mt-4">A frontend health care website specially for pregnant women. This websites includes OAuth based login, Email & Password based signup, Private routing & Beautiful Design. </p>
-          <p className="flex flex-wrap items-center text-primary text-sm font-semibold justify-start mt-3">
+          <p className="flex flex-wrap items-center text-primary text-sm font-semibold justify-start mt-3 font-mono">
             <span className="mr-3">React</span>
             <span className="mr-3">Firebase</span>
             <span className="mr-3">Tailwind</span>

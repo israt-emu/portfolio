@@ -14,7 +14,7 @@ module.exports = {
         small_bg: "var(--small-bg-color)",
       },
       fontFamily: {
-        nunito: ["var(--font-nunito)", ...fontFamily.sans],
+        merri: ["var(--font-merri)", ...fontFamily.sans],
       },
       screens: {
         xs: "320px",

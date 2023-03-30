@@ -21,7 +21,7 @@ const Education = () => {
             <Image src={nstu_logo} alt="" className="w-20 mr-3" />
             <div>
               <h1 className="text-xl text-title">BSc. In Applied Mathematics</h1>
-              <p className="text-sm text-small_text">NSTU | January 2018-March 2023</p>
+              <p className="text-sm text-small_text font-mono">NSTU | January 2018-March 2023</p>
               <Link href="https://nstu.edu.bd/">
                 <BiLinkExternal className="text-small_text text-lg mt-2" />
               </Link>
@@ -34,7 +34,7 @@ const Education = () => {
             <Image src={sa_logo} alt="" className="w-20 mr-3" />
             <div>
               <h1 className="text-xl text-title">Higher Secondary School Certificate</h1>
-              <p className="text-sm text-small_text">Chowmuhoni Govt. S.A. College | April 2015-June 2017</p>
+              <p className="text-sm text-small_text font-mono">Chowmuhoni Govt. S.A. College | April 2015-June 2017</p>
               <Link href="https://www.cgsacollege.edu.bd/">
                 <BiLinkExternal className="text-small_text text-lg mt-2" />
               </Link>

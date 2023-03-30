@@ -30,7 +30,7 @@ const Navigation = () => {
   };
   const [open, setOpen] = useState(false);
   return (
-    <header className=" p-2 dark:text-gray-100 text-title bg-white/5 backdrop-blur-lg sticky top-0 z-50">
+    <header className=" p-2 dark:text-gray-100 text-title bg-white/5 backdrop-blur-lg sticky top-0 z-50 font-mono">
       <div className="lg:container flex justify-between h-12 ">
         <motion.div
           initial={{opacity: 0, scale: 0}}

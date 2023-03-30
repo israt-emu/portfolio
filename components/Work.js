@@ -26,7 +26,7 @@ const Work = () => {
       </div>
 
       <div className="md:py-12 pb-12 pt-8 mx-auto max-w-5xl">
-        <div className="grid gap-4 sm:grid-cols-12">
+        <div className="grid sm:gap-4 sm:grid-cols-12">
           <div className="col-span-12 sm:col-span-3">
             <div className="text-left mb-14">
               <Image src={zivaka} className="w-8 h-8 mr-3 mb-2" alt="Zivaka Image" />
@@ -35,8 +35,8 @@ const Work = () => {
                   <h3 className="text-xl font-semibold">Zivaka LLP</h3>
                 </div>
               </Link>
-              <span className="text-xs font-semibold tracking-wider uppercase text-small_text ">Full Stack Developer</span>
-              <p className="text-xs font-semibold tracking-wider uppercase text-small_text mb-2">Dec 2021 - Aug 2022</p>
+              <span className="text-sm font-semibold tracking-wider uppercase text-small_text font-mono ">Full Stack Developer</span>
+              <p className="text-sm font-semibold tracking-wider uppercase text-small_text mb-2 font-mono">Dec 2021 - Aug 2022</p>
               <div className="flex items-center text-primary">
                 <Link href="https://drive.google.com/file/d/120JRpeq6LXTvYicpHbfQN4LCZRPNNT7o/view?usp=share_link" target="blank">
                   <TbFileCertificate className="text-xl" />
