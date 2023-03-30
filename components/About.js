@@ -30,7 +30,7 @@ const About = () => {
       </div>
       <div className="flex flex-col justify-center rounded-sm lg:text-left lg:w-3/5 sm:px-6 lg:px-0 mt-6 lg:mt-0">
         <div className="flex items-center">
-          <Image src={about} alt="" className="w-4 sm:w-7 mr-2" />
+          <Image src={about} alt="" className="w-6 sm:w-7 mr-2" />
           <h1 className="text-xl sm:text-3xl font-semibold leading-none text-title ml-3">About Me</h1>
           <hr className="border-t border-gray-700 w-1/5 mt-2 ml-2" />
         </div>

@@ -14,7 +14,7 @@ const Contact = () => {
           <MdEmail className="text-2xl mr-2 text-primary" />
           <p>isratjahan.emu1998@gmail.com</p>
         </div>
-        <p className="text-small_text mt-2">Have a Good Day!</p>
+        <p className="text-small_text mt-2">Have a Good Day!😊</p>
       </div>
     </div>
   );

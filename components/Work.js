@@ -47,13 +47,13 @@ const Work = () => {
           </div>
           <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
             <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 before:absolute before:top-2 before:bottom-0 before:w-0.5 before:-left-3 before:bg-gray-700">
-              <div className="flex flex-col relative before:absolute before:top-2 before:w-4 before:h-4 before:rounded-full before:left-[-35px] before:z-[1] before:bg-primary">
+              <div className="flex flex-col relative before:absolute before:top-2 before:w-4 before:h-4 before:rounded-full before:left-[-35px] before:z-[1] before:bg-purple-700">
                 <p className="mt-3">Worked with a team of three designers & two developer to build a e-commerce website and a question bank website </p>
               </div>
-              <div className="flex flex-col relative before:absolute before:top-2 before:w-4 before:h-4 before:rounded-full before:left-[-35px] before:z-[1] before:bg-primary">
+              <div className="flex flex-col relative before:absolute before:top-2 before:w-4 before:h-4 before:rounded-full before:left-[-35px] before:z-[1] before:bg-indigo-600">
                 <p className="mt-3">Re-organized something to make it work better. Identified a problem and solved it.</p>
               </div>
-              <div className="flex flex-col relative before:absolute before:top-2 before:w-4 before:h-4 before:rounded-full before:left-[-35px] before:z-[1] before:bg-primary">
+              <div className="flex flex-col relative before:absolute before:top-2 before:w-4 before:h-4 before:rounded-full before:left-[-35px] before:z-[1] before:bg-green-500">
                 <p className="mt-3">Come up with a new idea that improved things. Developed or implemented new procedures or systems.</p>
               </div>
             </div>
