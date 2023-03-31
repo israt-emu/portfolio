@@ -43,15 +43,15 @@ const About = () => {
           <br className="hidden lg:flex" />I also love to____
           <div className="flex flex-col sm:flex-row sm:items-center font-mono">
             <div className="flex items-center mr-3">
-              <MdMovie className="text-lg mr-1 text-primary" /> <div className="font-medium">Watch movie</div>
+              <span className="text-xl mr-1">📺</span> <div className="font-medium">Watch movie</div>
             </div>
             <div className="flex items-center mr-3">
               <FcReading className="text-lg mr-1" />
               <div className="font-medium">Read books</div>
             </div>
             <div className="flex items-center">
-              <FaRunning className="text-lg mr-1 text-primary" />
-              <div className="font-medium">Travel</div>
+              <span className="text-xl mr-1">🚕</span>
+              <div className="font-medium"> Travel</div>
             </div>
           </div>
         </div>
