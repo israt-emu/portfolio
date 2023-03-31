@@ -12,9 +12,10 @@ body {
 /* rgb(17, 34, 64) */
 /* rgb(90, 138, 62) */
 :root {
-  --primary-color: rgb(90, 138, 62);
+  --primary-color: rgb(67, 13, 121);
   --hover-color: rgba(45, 75, 27, 0.178);
-  --secondary-color: rgb(70, 190, 194);
+  --secondary-color: rgb(116, 12, 220);
+  --darkblue-color: rgb(3, 218, 198);
   --title-color: rgb(225, 226, 225);
   --small-text-color: rgb(156 163 175);
   --small-bg-color: rgba(55, 79, 107, 0.315);
@@ -29,11 +30,11 @@ a {
   box-sizing: border-box;
 }
 .skillbg {
-  border: 1px solid rgba(215, 209, 255, 0.208);
+  border: 1px solid rgba(215, 209, 255, 0.15);
   background-color: hsla(0, 0%, 100%, 0.1);
 }
 .banner {
-  background-image: url("../assets/images/1567665.png");
+  background-image: url("../assets/images/maxresdefault.jpg");
   background-position: right center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import {TbFileCertificate} from "react-icons/tb";
+import {AiFillPlusCircle, AiFillMinusCircle} from "react-icons/ai";
 import zivaka from "../assets/images/zivaka.png";
 import intern from "../assets/images/internship.png";
 import {motion} from "framer-motion";
+import {useState} from "react";
+import {FaMapMarkerAlt} from "react-icons/fa";
 
 const Work = () => {
+  const [first, setfirst] = useState(true);
   const workVariants = {
     offscreen: {
       y: 100,
@@ -19,44 +23,61 @@ const Work = () => {
     },
   };
   return (
-    <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={workVariants} className="sm:w-4/5 lg:w-9/12 flex flex-col justify-center px-6 py-20 mx-auto text-title lg:container" id="work">
+    <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={workVariants} className="w-full sm:w-4/5 lg:w-9/12 flex flex-col justify-center sm:px-6 py-20 mx-auto text-title lg:container" id="work">
       <div className="flex items-center md:mb-4">
-        <Image src={intern} alt="" className="w-12 mr-3" />
-        <h1 className="text-xl font-bold sm:text-4xl text-title">Where I have worked</h1>
+        <span className="text-4xl">💼</span>
+        <h1 className="text-xl font-bold sm:text-4xl  text-gradient">Where I have worked</h1>
         <hr className="border-t border-gray-700 w-1/5 mt-2 ml-3" />
       </div>
-
-      <div className="md:py-12 pb-12 pt-8 mx-auto max-w-5xl">
-        <div className="grid sm:gap-4 sm:grid-cols-12">
-          <div className="col-span-12 sm:col-span-3">
-            <div className="text-left mb-14">
-              <Image src={zivaka} className="w-8 h-8 mr-3 mb-2" alt="Zivaka Image" />
-              <Link href="https://www.facebook.com/zivaka.llp" target="blank">
+      {/* //accordion  */}
+      <div className="px-2 py-6">
+        <div className="tab w-full overflow-hidden">
+          <input className="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs" />
+          {/* ///header  */}
+          <div className={`flex items-center justify-between rounded ${first ? "bg-secondary" : "bg-primary"} `}>
+            <label className="flex items-center text-lg p-5 leading-normal cursor-pointer font-bold" for="tab-multi-one">
+              Full Stack Developer @Zivaka LLP
+              {/* <Link href="https://www.facebook.com/zivaka.llp" target="blank">
                 <div className="flex items-center">
-                  <h3 className="text-xl font-semibold">Zivaka LLP</h3>
+                  <h3 className="font-semibold">Zivaka LLP</h3>
                 </div>
-              </Link>
-              <span className="text-sm font-semibold tracking-wider uppercase text-small_text font-mono ">Full Stack Developer</span>
-              <p className="text-sm font-semibold tracking-wider uppercase text-small_text mb-2 font-mono">Dec 2021 - Aug 2022</p>
-              <div className="flex items-center text-primary">
-                <Link href="https://drive.google.com/file/d/120JRpeq6LXTvYicpHbfQN4LCZRPNNT7o/view?usp=share_link" target="blank">
-                  <TbFileCertificate className="text-xl" />
-                </Link>
-              </div>
+              </Link> */}
+            </label>
+            <div className="flex items-center">
+              <div className="font-bold font-mono mr-3 text-lg hidden lg:flex">Dec 2021-Aug 2022</div>
+              <button className={`mr-4 text-2xl ${first ? "hidden" : "block"}`} onClick={() => setfirst(true)}>
+                <AiFillPlusCircle />
+              </button>
+              <button className={`mr-4 text-2xl ${first ? "block" : "hidden"}`} onClick={() => setfirst(false)}>
+                <AiFillMinusCircle />
+              </button>
             </div>
           </div>
-          <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
-            <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 before:absolute before:top-2 before:bottom-0 before:w-0.5 before:-left-3 before:bg-gray-700">
-              <div className="flex flex-col relative before:absolute before:top-2 before:w-4 before:h-4 before:rounded-full before:left-[-35px] before:z-[1] before:bg-purple-700">
-                <p className="mt-3">Worked with a team of three designers & two developer to build a e-commerce website and a question bank website </p>
+          {/* content  */}
+          <div className={`tab-content overflow-hidden mt-4 rounded bg-dark_blue  leading-normal ${first ? "flex" : "hidden"} flex-col-reverse md:flex-row md:items-center justify-between px-8 py-8`}>
+            <div className="md:mr-8">
+              <div className="flex items-center">
+                <FaMapMarkerAlt className="mr-2 text-purple-400 text-lg" />
+                <h1>Kolkata, West Bengal, India</h1>
               </div>
-              <div className="flex flex-col relative before:absolute before:top-2 before:w-4 before:h-4 before:rounded-full before:left-[-35px] before:z-[1] before:bg-indigo-600">
-                <p className="mt-3">Re-organized something to make it work better. Identified a problem and solved it.</p>
+              <div className="flex items-center  mt-2">
+                <Link href="https://drive.google.com/file/d/120JRpeq6LXTvYicpHbfQN4LCZRPNNT7o/view?usp=share_link" target="blank">
+                  <TbFileCertificate className="text-xl text-purple-400 mr-2" />
+                </Link>
+                <h1>Certification</h1>
               </div>
-              <div className="flex flex-col relative before:absolute before:top-2 before:w-4 before:h-4 before:rounded-full before:left-[-35px] before:z-[1] before:bg-green-500">
-                <p className="mt-3">Come up with a new idea that improved things. Developed or implemented new procedures or systems.</p>
+              <h1 className="mt-2 mb-4">Worked with a team of three frontend & two backend developer to build a e-commerce website and a question bank website.</h1>
+              <div className="flex items-center text-sm font-mono font-medium flex-wrap">
+                <span className="px-3 py-1 bg-dark_blue2 rounded-full mr-2 my-2 lg:my-0">JavaScript</span>
+                <span className="px-3 py-1 bg-dark_blue2 rounded-full mr-2 my-2 lg:my-0">React</span>
+                <span className="px-3 py-1 bg-dark_blue2 rounded-full mr-2 my-2 lg:my-0">Bootstrap</span>
+                <span className="px-3 py-1 bg-dark_blue2 rounded-full mr-2 my-2 lg:my-0">MUI</span>
+                <span className="px-3 py-1 bg-dark_blue2 rounded-full mr-2 my-2 lg:my-0">Node JS</span>
+                <span className="px-3 py-1 bg-dark_blue2 rounded-full mr-2 my-2 lg:my-0">Express JS</span>
+                <span className="px-3 py-1 bg-dark_blue2 rounded-full my-2 lg:my-0">MongoDb</span>
               </div>
             </div>
+            <Image src={zivaka} className="w-16 mb-3 md:mb-0" alt="Zivaka Image" />
           </div>
         </div>
       </div>

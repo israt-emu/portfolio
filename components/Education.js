@@ -11,12 +11,12 @@ const Education = () => {
     <div className="sm:w-9/12 mx-auto py-16 lg:container" id="education">
       <div className="flex items-center">
         <Image src={study} alt="" className="w-12 mr-2" />
-        <h1 className="text-xl font-bold sm:text-4xl text-title mr-3">Where I’ve Studied</h1>
+        <h1 className="text-xl font-bold sm:text-4xl text-gradient mr-3">Where I’ve Studied</h1>
         <hr className="border-t border-gray-700 w-1/5 mt-2" />
       </div>
       <div className="flex flex-col pt-8">
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 md:gap-12 items-center">
-          <div className="flex items-center bg-slate-600/20 ring-1 ring-blue-400/20 rounded-lg  backdrop-blur-sm">
+          <div className="flex items-center bg-slate-600/10 ring-1 ring-violet-200/10 rounded-lg  backdrop-blur-sm">
             {" "}
             <Image src={nstu_logo} alt="" className="w-20 mr-3" />
             <div>
@@ -30,7 +30,7 @@ const Education = () => {
           <Image src={nstu} alt="" className="w-1/2" />
         </div>
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 md:gap-12 justify-between items-center my-4">
-          <div className="flex items-center bg-slate-600/20 ring-1 ring-blue-400/20 rounded-lg  backdrop-blur-sm py-3 pl-2">
+          <div className="flex items-center bg-slate-600/10 ring-1 ring-violet-200/10 rounded-lg  backdrop-blur-sm py-3 pl-2">
             <Image src={sa_logo} alt="" className="w-20 mr-3" />
             <div>
               <h1 className="text-xl text-title">Higher Secondary School Certificate</h1>

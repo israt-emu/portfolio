@@ -25,7 +25,7 @@ const Skills = () => {
     <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={skillVariants} className="mx-auto w-full lg:w-9/12 py-8 lg:px-6 lg:container" id="skill">
       <div className="flex items-center mb-6">
         <Image src={skills} alt="" className="w-12 mr-3" />
-        <h2 className="text-xl font-bold sm:text-4xl text-title text-center">My Expertise</h2>
+        <h2 className="text-xl font-bold sm:text-4xl  text-gradient text-center">My Expertise</h2>
         <hr className="border-t border-gray-700 w-1/5 mt-2 ml-3" />
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-5 md:py-8 justify-start">
