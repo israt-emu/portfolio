@@ -24,13 +24,13 @@ const Work = () => {
   };
   return (
     <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={workVariants} className="w-full sm:w-4/5 lg:w-9/12 flex flex-col justify-center sm:px-6 py-20 mx-auto text-title lg:container" id="work">
-      <div className="flex items-center md:mb-4">
+      <div className="flex items-center mb-4">
         <span className="text-4xl">💼</span>
         <h1 className="text-xl font-bold sm:text-4xl  text-gradient">Where I have worked</h1>
         <hr className="border-t border-gray-700 w-1/5 mt-2 ml-3" />
       </div>
       {/* //accordion  */}
-      <div className="px-2 py-6">
+      <div className="sm:px-2 py-6">
         <div className="tab w-full overflow-hidden">
           <input className="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs" />
           {/* ///header  */}

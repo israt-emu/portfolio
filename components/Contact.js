@@ -11,7 +11,7 @@ const Contact = () => {
         <p className="text-small_text my-2 text-md sm:text-lg">I’d Love to meet up with you to discuss any project and Potential collaboration</p>
         <p className="text-small_text">Send me an Email at</p>
         <div className="flex items-center text-small_text font-mono">
-          <MdEmail className="text-2xl mr-2 text-primary" />
+          <MdEmail className="text-2xl mr-2 text-purple-400" />
           <p>isratjahan.emu1998@gmail.com</p>
         </div>
         <p className="text-small_text mt-2">Have a Good Day!😊</p>
