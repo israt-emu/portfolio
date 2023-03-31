@@ -13,7 +13,7 @@ import Projects from "../components/Projects";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="font-nunito">
       <div className="px-4">
         <Banner />
         <About />

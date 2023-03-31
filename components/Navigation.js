@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../assets/images/Israt2.png";
+import logo from "../assets/images/Israt.png";
 import {motion} from "framer-motion";
 import Link from "next/link";
 import {AiOutlineMenu} from "react-icons/ai";
@@ -30,7 +30,7 @@ const Navigation = () => {
   };
   const [open, setOpen] = useState(false);
   return (
-    <header className=" p-2 dark:text-gray-100 text-title bg-white/5 backdrop-blur-lg sticky top-0 z-50 font-mono">
+    <header className="md:mx-8 md:rounded-b md:rounded-r p-2 text-title bg-white/10 backdrop-blur-xl sticky top-0 z-50 font-mono">
       <div className="lg:container flex justify-between h-12 ">
         <motion.div
           initial={{opacity: 0, scale: 0}}
@@ -82,14 +82,7 @@ const Navigation = () => {
           </motion.li>
         </motion.ul>
         <div className="flex justify-end items-center lg:hidden ml-auto mr-4">
-          <AiOutlineMenu className="text-xl font-bold text-primary cursor-pointer" onClick={() => setOpen(true)} />
-        </div>
-        <div className="flex items-center">
-          <div className="items-center flex-shrink-0 hidden lg:flex lg:ml-3">
-            <motion.button variants={nav} className="px-3 py-1 rounded border-2 border-primary text-primary font-medium  hover:bg-hover_color">
-              Resume
-            </motion.button>
-          </div>
+          <AiOutlineMenu className="text-xl font-bold text-white cursor-pointer" onClick={() => setOpen(true)} />
         </div>
       </div>
       {/* ///mobile menu  */}
@@ -119,13 +112,6 @@ const Navigation = () => {
             <Link href="#contact" className="flex items-center hover:bg-gray-500/30 py-1 rounded">
               Contact
             </Link>
-          </li>
-          <li className="flex items-center">
-            <div className="items-center flex-shrink-0  flex my-3">
-              <button variants={nav} className="px-3 py-1 rounded border-2 border-primary text-primary font-medium hover:bg-hover_color">
-                Resume
-              </button>
-            </div>
           </li>
         </ul>
         <div className="mt-4">

@@ -1,17 +1,17 @@
 import "../styles/globals.css";
-import {Merriweather} from "next/font/google";
+import {Merriweather, Nunito} from "next/font/google";
 import Layout from "../components/Layout";
-const merri = Merriweather({
+const nunito = Nunito({
   subsets: ["latin"],
-  variable: "--font-merri",
+  variable: "--font-nunito",
   style: ["normal", "italic"],
-  weight: ["300", "400", "700", "900"],
+  weight: ["300", "400", "500", "700", "900"],
 });
 
 function MyApp({Component, pageProps}) {
   return (
     <Layout>
-      <main className={`${merri.variable} font-sans`}>
+      <main className={`${nunito.variable} font-sans`}>
         <Component {...pageProps} />
       </main>
     </Layout>

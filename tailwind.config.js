@@ -15,7 +15,7 @@ module.exports = {
         hover_color: "var(--hover-color)",
       },
       fontFamily: {
-        merri: ["var(--font-merri)", ...fontFamily.sans],
+        nunito: ["var(--font-nunito)", ...fontFamily.sans],
       },
       screens: {
         xs: "320px",
