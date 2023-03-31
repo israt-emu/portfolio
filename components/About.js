@@ -38,7 +38,7 @@ const About = () => {
         <div className="mt-6 mb-4 text-md sm:mb-8 text-small_text">
           Hello! My name is Israt Jahan Emu. Currently, I’m taking part in a master’s degree program at Noakhali Science & Technology University in <span className="text-primary font-semibold font-mono">Applied Mathematics</span>.
           <br className="hidden lg:flex" />
-          I’m fascinated by Programming. It excites me to write and read code. No matter how difficult, any programming problem excites me, and I enjoy thinking about its solution. Designing and developing websites is also a passion of mine since it is a part of programming. <br className="hidden lg:flex" />
+          I’m fascinated by Programming. It excites me to write and read code. Designing and developing websites is also a passion of mine since it is a part of programming. <br className="hidden lg:flex" />
           I’ve completed an internship at indian IT firm <span className="text-primary font-semibold font-mono">Zivaka LLP</span> and built three professional websites with their team.
           <br className="hidden lg:flex" />I also love to____
           <div className="flex flex-col sm:flex-row sm:items-center font-mono">
