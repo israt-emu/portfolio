@@ -42,7 +42,9 @@ const Navigation = () => {
           }}
           className="flex items-center"
         >
-          <Image src={logo} alt="logo" className="w-24" />
+          <Link className="" href="/">
+            <Image src={logo} alt="logo" className="w-24" />
+          </Link>
         </motion.div>
         <motion.ul initial="hidden" animate="show" variants={nav} className="items-stretch hidden space-x-3 lg:flex backdrop-blur-sm skillbg border border-gray-700 px-4 rounded-md">
           <motion.li
@@ -56,27 +58,27 @@ const Navigation = () => {
             variants={item}
             className="flex items-center"
           >
-            <Link href="#about" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+            <Link href="/#about" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
               About
             </Link>
           </motion.li>
           <motion.li variants={item} className="flex items-center">
-            <Link href="#work" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+            <Link href="/#work" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
               Experience
             </Link>
           </motion.li>
           <motion.li variants={item} className="flex items-center">
-            <Link href="#projects" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+            <Link href="/#projects" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
               Projects
             </Link>
           </motion.li>
           <motion.li variants={item} className="flex items-center">
-            <Link href="#education" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+            <Link href="/#education" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
               Education
             </Link>
           </motion.li>
           <motion.li variants={item} className="flex items-center">
-            <Link href="#contact" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+            <Link href="/#contact" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
               Contact
             </Link>
           </motion.li>
@@ -89,27 +91,27 @@ const Navigation = () => {
       <div className={`${open ? "flex" : "hidden"} justify-between backdrop-blur-sm skillbg border border-gray-700 px-4 rounded-md lg:hidden h-full w-9/12 mt-4`}>
         <ul className="items-stretch flex flex-col space-x-3">
           <li className="flex items-center">
-            <Link href="#about" className="flex items-center hover:bg-gray-500/30 pl-4 pt-3 pb-1 rounded">
+            <Link href="/#about" className="flex items-center hover:bg-gray-500/30 pl-4 pt-3 pb-1 rounded">
               About
             </Link>
           </li>
           <li className="flex items-center">
-            <Link href="#work" className="flex items-center hover:bg-gray-500/30 py-1 rounded">
+            <Link href="/#work" className="flex items-center hover:bg-gray-500/30 py-1 rounded">
               Experience
             </Link>
           </li>
           <li className="flex items-center">
-            <Link href="#projects" className="flex items-center hover:bg-gray-500/30 py-1 rounded">
+            <Link href="/#projects" className="flex items-center hover:bg-gray-500/30 py-1 rounded">
               Projects
             </Link>
           </li>
           <li className="flex items-center">
-            <Link href="#education" className="flex items-center hover:bg-gray-500/30 py-1 rounded">
+            <Link href="/#education" className="flex items-center hover:bg-gray-500/30 py-1 rounded">
               Education
             </Link>
           </li>
           <li className="flex items-center">
-            <Link href="#contact" className="flex items-center hover:bg-gray-500/30 py-1 rounded">
+            <Link href="/#contact" className="flex items-center hover:bg-gray-500/30 py-1 rounded">
               Contact
             </Link>
           </li>

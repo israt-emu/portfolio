@@ -5,7 +5,6 @@ import {BsGithub} from "react-icons/bs";
 import library from "../assets/images/library.png";
 import travel from "../assets/images/tour.png";
 import lipstick from "../assets/images/lipstick.png";
-import happyMom from "../assets/images/hapy-mom-main.png";
 import projects from "../assets/images/projects.png";
 import {motion} from "framer-motion";
 const Projects = () => {
@@ -119,31 +118,11 @@ const Projects = () => {
           </div>
         </div>
       </motion.div>
-      {/* happy mom  */}
-      <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true}} variants={projectVariants} className="flex flex-col-reverse lg:flex-row items-center justify-center my-16 p-6 md:p-10 bg-slate-600/10 ring-1 ring-violet-200/10 rounded-2xl  backdrop-blur-sm">
-        <div>
-          <h1 className="text-purple-400 text-md font-semibold">Frontend</h1>
-          <h1 className="text-title text-2xl text-left font-semibold">Pregnancy Care Website</h1>
-          <p className="bg-slate-400/5 p-4 ring-1 ring-slate-50/20 text-small_text rounded mr-3 mt-4 hidden sm:flex">A frontend health care website specially for pregnant women. This websites includes OAuth based login, Email & Password based signup, Private routing & Beautiful Design. </p>
-          <p className="flex flex-wrap items-center text-purple-400 text-sm font-semibold justify-start mt-3 font-mono">
-            <span className="mr-3">React</span>
-            <span className="mr-3">Firebase</span>
-            <span className="mr-3">Tailwind</span>
-          </p>
-          <div className="flex items-center mt-3 mb-4 text-small_text justify-start">
-            <Link href="https://github.com/israt-emu/happy-mom" target="blank">
-              <BsGithub className="text-lg mr-3" title="Frontend Code" />
-            </Link>
 
-            <Link href="https://happy-mom-1027a.web.app/" target="blank">
-              <BiLinkExternal className="text-lg" title="Live Site" />
-            </Link>
-          </div>
-        </div>
-        <Image src={happyMom} alt="" className="lg:w-1/2 mb-4 lg:mb-0" />
-      </motion.div>
       <div className="text-center">
-        <button className="px-4 py-2 rounded border-2 text-small_text  hover:bg-hover_color border-gradient">View More</button>
+        <Link href="/projects" className="px-4 py-2 text-small_text btn-bg text-dark_blue font-bold">
+          View More
+        </Link>
       </div>
     </div>
   );

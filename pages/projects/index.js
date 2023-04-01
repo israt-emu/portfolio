@@ -1,7 +1,11 @@
-import React from "react";
+import AllProjects from "../../components/AllProjects";
 
-const index = () => {
-  return <div className="text-white">this is projects page</div>;
+const Projects = () => {
+  return (
+    <div className="font-nunito ">
+      <AllProjects />
+    </div>
+  );
 };
 
-export default index;
+export default Projects;

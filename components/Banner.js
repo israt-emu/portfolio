@@ -53,8 +53,10 @@ const Banner = () => {
           </Link>
         </div>
         <div className="items-center flex-shrink-0 flex font-mono">
-          <button className="px-4 py-2 rounded border-2 text-small_text  hover:bg-hover_color border-gradient">View Projects</button>
-          <button className="px-3 py-2 ml-3 rounded border-2 border-gradient2 text-small_text font-medium  hover:bg-hover_color">Resume</button>
+          <Link href="/#projects" className="px-3 py-2 border-2 text-dark_blue  border-gradient btn-bg font-bold">
+            View Projects
+          </Link>
+          <button className="px-3 py-2 ml-3 rounded border-2 border-gradient text-small_text font-medium  hover:bg-hover_color">Resume</button>
         </div>
       </motion.div>
       <motion.div

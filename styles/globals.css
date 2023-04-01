@@ -53,6 +53,9 @@ a {
   border-image-slice: 1;
   border-image-source: linear-gradient(to left, #acb6e5, #86fde8);
 }
+.btn-bg {
+  background: linear-gradient(to left, #9796f0, #1e5155);
+}
 @media (prefers-color-scheme: dark) {
   /* html {
     /* color-scheme: dark; */
