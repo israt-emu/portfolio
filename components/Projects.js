@@ -120,7 +120,7 @@ const Projects = () => {
       </motion.div>
 
       <div className="text-center">
-        <Link href="/projects" className="px-4 py-2 text-small_text btn-bg text-dark_blue font-bold">
+        <Link href="/projects" className="px-4 py-2 btn-bg text-dark_blue font-bold">
           View More
         </Link>
       </div>
