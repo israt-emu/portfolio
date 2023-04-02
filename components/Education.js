@@ -5,17 +5,39 @@ import nstu from "../assets/images/fountain_pen.jpg";
 import study from "../assets/images/study.png";
 import sa from "../assets/images/sa-image.jpg";
 import {BiLinkExternal} from "react-icons/bi";
+import {motion} from "framer-motion";
 import Link from "next/link";
 const Education = () => {
   return (
     <div className="sm:w-9/12 mx-auto py-16 lg:container" id="education">
-      <div className="flex items-center">
+      <motion.div
+        id="education"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{once: true, amount: 0.1}}
+        transition={{duration: 0.6, delay: 0.5}}
+        variants={{
+          visible: {opacity: 1, y: 0},
+          hidden: {opacity: 0, y: 50},
+        }}
+        className="flex items-center"
+      >
         <Image src={study} alt="" className="w-12 mr-2" />
         <h1 className="text-xl font-bold sm:text-4xl text-gradient mr-3">Where I’ve Studied</h1>
         <hr className="border-t border-gray-700 w-1/5 mt-2" />
-      </div>
+      </motion.div>
       <div className="flex flex-col pt-8">
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 md:gap-12 items-center">
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{once: true}}
+          transition={{duration: 0.6, delay: 0.8}}
+          variants={{
+            visible: {opacity: 1, y: 0},
+            hidden: {opacity: 0, y: 70},
+          }}
+          className="grid lg:grid-cols-2 grid-cols-1 gap-5 md:gap-12 items-center"
+        >
           <div className="flex items-center bg-slate-600/10 ring-1 ring-violet-200/10 rounded-lg  backdrop-blur-sm">
             {" "}
             <Image src={nstu_logo} alt="" className="w-20 mr-3" />
@@ -28,8 +50,18 @@ const Education = () => {
             </div>
           </div>
           <Image src={nstu} alt="" className="w-1/2 hidden lg:flex" />
-        </div>
-        <div className="grid lg:grid-cols-2 grid-cols-1 gap-5 md:gap-12 justify-between items-center my-4">
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{once: true}}
+          transition={{duration: 0.6, delay: 1}}
+          variants={{
+            visible: {opacity: 1, y: 0},
+            hidden: {opacity: 0, y: 70},
+          }}
+          className="grid lg:grid-cols-2 grid-cols-1 gap-5 md:gap-12 justify-between items-center my-4"
+        >
           <div className="flex items-center bg-slate-600/10 ring-1 ring-violet-200/10 rounded-lg  backdrop-blur-sm py-3 pl-2">
             <Image src={sa_logo} alt="" className="w-20 mr-3" />
             <div>
@@ -41,7 +73,7 @@ const Education = () => {
             </div>
           </div>
           <Image src={sa} alt="" className="w-1/2 hidden lg:flex" />
-        </div>
+        </motion.div>
       </div>
     </div>
   );

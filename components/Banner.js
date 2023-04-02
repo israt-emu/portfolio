@@ -33,14 +33,23 @@ const Banner = () => {
           Particularly I’m interested in learning and staying <br className="hidden lg:flex" /> current about programming and technological advancements. Also, I enjoy creating things
           <br className="hidden lg:flex" /> that live on the internet.
         </div>
-        <div className="flex items-center">
+        <motion.div
+          initial={{opacity: 0, x: -180}}
+          animate={{opacity: 1, x: 0}}
+          transition={{
+            ease: "easeInOut",
+            duration: 1,
+            delay: 0.7,
+          }}
+          className="flex items-center"
+        >
           <div className="mb-3 text-small_text font-mono mr-3">
             <span className="text-xl text-sky-400">2.5 </span> years of Experience
           </div>
           <div className="mb-3 text-small_text font-mono">
             <span className="text-xl text-indigo-600">10+ </span> Projects
           </div>
-        </div>
+        </motion.div>
         <div className="flex items-center mb-4 text-small_text ">
           <Link href="https://www.facebook.com/profile.php?id=100024239881205" target="blank">
             <BsFacebook className="w-8 mr-2 " />

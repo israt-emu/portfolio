@@ -10,21 +10,19 @@ import {FaRunning} from "react-icons/fa";
 // import {useAnimate, useInView} from "framer-motion";
 
 const About = () => {
-  const aboutVariants = {
-    offscreen: {
-      y: 100,
-    },
-    onscreen: {
-      y: 0,
-      transition: {
-        type: "linear",
-        duration: 0.5,
-      },
-    },
-  };
-
   return (
-    <motion.div className="sm:w-10/12 xs:w-full flex flex-col justify-center px-6 mx-auto sm:pt-14 pb-10 md:my-20 lg:flex-row  lg:items-center items-start bg-slate-600/10 ring-1 ring-violet-200/10 rounded-2xl  backdrop-blur-sm lg:container" initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={aboutVariants} id="about">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{once: true}}
+      transition={{duration: 0.6, delay: 0.4}}
+      variants={{
+        visible: {opacity: 1, y: 0},
+        hidden: {opacity: 0, y: 100},
+      }}
+      className="sm:w-10/12 xs:w-full flex flex-col justify-center px-6 mx-auto sm:pt-14 pb-10 md:my-20 lg:flex-row  lg:items-center items-start bg-slate-600/10 ring-1 ring-violet-200/10 rounded-2xl  backdrop-blur-sm lg:container"
+      id="about"
+    >
       <div className="flex items-center mt-12 sm:mt-8 lg:mt-0 lg:w-2/5 ">
         <Image src={myImage} alt="" className="object-contain lg:w-4/5 2xl:w-2/5  rounded " />
       </div>

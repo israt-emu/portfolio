@@ -3,34 +3,42 @@ import Link from "next/link";
 import {TbFileCertificate} from "react-icons/tb";
 import {AiFillPlusCircle, AiFillMinusCircle} from "react-icons/ai";
 import zivaka from "../assets/images/zivaka.png";
-import intern from "../assets/images/internship.png";
 import {motion} from "framer-motion";
 import {useState} from "react";
 import {FaMapMarkerAlt} from "react-icons/fa";
 
 const Work = () => {
   const [first, setfirst] = useState(true);
-  const workVariants = {
-    offscreen: {
-      y: 100,
-    },
-    onscreen: {
-      y: 0,
-      transition: {
-        type: "linear",
-        duration: 0.5,
-      },
-    },
-  };
+
   return (
-    <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={workVariants} className="w-full sm:w-4/5 lg:w-9/12 flex flex-col justify-center sm:px-6 py-20 mx-auto text-title lg:container" id="work">
-      <div className="flex items-center mb-4">
+    <div className="w-full sm:w-4/5 lg:w-9/12 flex flex-col justify-center sm:px-6 py-20 mx-auto text-title lg:container" id="work">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{once: true}}
+        transition={{duration: 0.6, delay: 0.4}}
+        variants={{
+          visible: {opacity: 1, y: 0},
+          hidden: {opacity: 0, y: 100},
+        }}
+        className="flex items-center mb-4"
+      >
         <span className="text-4xl">💼</span>
         <h1 className="text-xl font-bold sm:text-4xl  text-gradient">Where I have worked</h1>
         <hr className="border-t border-gray-700 w-1/5 mt-2 ml-3" />
-      </div>
+      </motion.div>
       {/* //accordion  */}
-      <div className="sm:px-2 py-6">
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{once: true}}
+        transition={{duration: 0.6, delay: 0.7}}
+        variants={{
+          visible: {opacity: 1, y: 0},
+          hidden: {opacity: 0, y: 100},
+        }}
+        className="sm:px-2 py-6"
+      >
         <div className="tab w-full overflow-hidden">
           <input className="absolute opacity-0 " id="tab-multi-one" type="checkbox" name="tabs" />
           {/* ///header  */}
@@ -80,8 +88,8 @@ const Work = () => {
             <Image src={zivaka} className="w-16 mb-3 md:mb-0" alt="Zivaka Image" />
           </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 
