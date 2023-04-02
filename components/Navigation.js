@@ -58,7 +58,7 @@ const Navigation = () => {
             variants={item}
             className="flex items-center"
           >
-            <Link href="/#about" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+            <Link href="#about" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
               About
             </Link>
           </motion.li>
