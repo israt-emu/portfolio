@@ -10,7 +10,7 @@ import {BiLinkExternal} from "react-icons/bi";
 const AllProjects = () => {
   const projectVariants = {
     offscreen: {
-      y: 200,
+      y: 190,
     },
     onscreen: {
       y: 0,
