@@ -65,7 +65,9 @@ const Banner = () => {
           <Link href="/#projects" className="px-3 py-2 border-2 text-dark_blue  border-gradient btn-bg font-bold">
             View Projects
           </Link>
-          <button className="px-3 py-2 ml-3 rounded border-2 border-gradient text-small_text font-medium  hover:bg-hover_color">Resume</button>
+          <Link href="https://drive.google.com/file/d/1s88Q30N4AZAMdm_fsr-OieGFvPsmccIx/view?usp=share_link" target="blank" className="px-3 py-2 ml-3 rounded border-2 border-gradient text-small_text font-medium  hover:bg-hover_color">
+            Resume
+          </Link>
         </div>
       </motion.div>
       <motion.div
