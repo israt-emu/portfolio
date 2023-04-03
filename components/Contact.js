@@ -17,6 +17,7 @@ const Contact = () => {
     >
       <div className=" px-6 py-10 bg-slate-600/10 ring-1 ring-violet-200/10 rounded-lg  backdrop-blur-sm">
         <div className="flex items-center">
+          <span className="text-2xl">🙋</span>
           <h1 className=" text-gradient text-xl sm:text-2xl">Let’s Start a Project Together</h1>
           <hr className="border-t border-gray-700 w-1/5 mt-2 ml-3" />
         </div>

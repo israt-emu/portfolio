@@ -1,13 +1,9 @@
 import {motion} from "framer-motion";
 import Image from "next/image";
-import React, {useEffect, useState} from "react";
+import React from "react";
 import myImage from "../assets/images/IMG_20230316_210606.jpg";
 import about from "../assets/images/about.png";
-import {MdMovie} from "react-icons/md";
 import {FcReading} from "react-icons/fc";
-import {FaRunning} from "react-icons/fa";
-
-// import {useAnimate, useInView} from "framer-motion";
 
 const About = () => {
   return (
@@ -24,11 +20,12 @@ const About = () => {
       id="about"
     >
       <div className="flex items-center mt-12 sm:mt-8 lg:mt-0 lg:w-2/5 ">
-        <Image src={myImage} alt="" className="object-contain lg:w-4/5 2xl:w-2/5  rounded " />
+        <Image src={myImage} alt="" className="object-contain lg:w-4/5 2xl:w-2/5 rounded opacity-75 hover:opacity-100 transition-all duration-75 hover:ease-linear" />
       </div>
       <div className="flex flex-col justify-center rounded-sm lg:text-left lg:w-3/5 sm:px-6 lg:px-0 mt-6 lg:mt-0">
         <div className="flex items-center">
-          <Image src={about} alt="" className="w-6 sm:w-7 mr-2" />
+          {/* <Image src={about} alt="" className="w-6 sm:w-7 mr-2" /> */}
+          <span className="text-3xl">👩</span>
           <h1 className="text-xl sm:text-3xl font-semibold leading-none text-gradient ml-3">About Me</h1>
           <hr className="border-t border-gray-700 w-1/5 mt-2 ml-2" />
         </div>

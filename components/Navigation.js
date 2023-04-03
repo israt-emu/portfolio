@@ -1,10 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import logo from "../assets/images/Israt.png";
 import {motion} from "framer-motion";
-import Link from "next/link";
 import {AiOutlineMenu} from "react-icons/ai";
 import {ImCross} from "react-icons/im";
-import {useState} from "react";
+import React, { useState} from "react";
 
 const Navigation = () => {
   //comment
@@ -46,19 +46,9 @@ const Navigation = () => {
             <Image src={logo} alt="logo" className="w-24" />
           </Link>
         </motion.div>
-        <motion.ul initial="hidden" animate="show" variants={nav} className="items-stretch hidden space-x-3 lg:flex backdrop-blur-sm skillbg border border-gray-700 px-4 rounded-md">
-          <motion.li
-            // initial={{ opacity: 0 }}
-            // animate={{ opacity: 1 }}
-            // transition={{
-            //   ease: "easeInOut",
-            //   duration: 0.5,
-            //   delay: 0.3,
-            // }}
-            variants={item}
-            className="flex items-center"
-          >
-            <Link href="#about" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+        <motion.ul initial="hidden" animate="show" variants={nav} className="items-stretch hidden space-x-3 lg:flex backdrop-blur-sm skillbg border border-gray-800 px-4 rounded-md">
+          <motion.li variants={item} className="flex items-center">
+            <Link href="/#about" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
               About
             </Link>
           </motion.li>
@@ -78,7 +68,7 @@ const Navigation = () => {
             </Link>
           </motion.li>
           <motion.li variants={item} className="flex items-center">
-            <Link href="/#contact" className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
+            <Link href="/#contact" scroll={true} className="flex items-center px-4 hover:bg-gray-500/30 py-1 rounded">
               Contact
             </Link>
           </motion.li>

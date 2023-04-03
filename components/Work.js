@@ -11,7 +11,7 @@ const Work = () => {
   const [first, setfirst] = useState(true);
 
   return (
-    <div className="w-full sm:w-4/5 lg:w-9/12 flex flex-col justify-center sm:px-6 py-20 mx-auto text-title lg:container" id="work">
+    <div className="w-full sm:w-4/5 lg:w-9/12 flex flex-col justify-center py-20 mx-auto text-title lg:container" id="work">
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -62,7 +62,7 @@ const Work = () => {
             </div>
           </div>
           {/* content  */}
-          <div className={`tab-content overflow-hidden mt-4 rounded bg-dark_blue  leading-normal ${first ? "flex" : "hidden"} flex-col-reverse md:flex-row md:items-center justify-between px-8 py-8`}>
+          <div className={`tab-content transition-all duration-500  overflow-hidden mt-4 rounded bg-dark_blue  leading-normal ${first ? "flex" : "hidden"}  flex-col-reverse md:flex-row md:items-center justify-between px-8 py-8 `}>
             <div className="md:mr-8">
               <div className="flex items-center">
                 <FaMapMarkerAlt className="mr-2 text-purple-400 text-lg" />

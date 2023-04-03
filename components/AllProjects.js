@@ -1,6 +1,5 @@
 import {motion} from "framer-motion";
 import Image from "next/image";
-import projects from "../assets/images/projects.png";
 import happyMom from "../assets/images/hapy-mom-main.png";
 import tech from "../assets/images/tech.png";
 import dashboard from "../assets/images/dashboard.png";
@@ -24,8 +23,8 @@ const AllProjects = () => {
     <div className="md:w-9/12 mx-auto py-8 lg:container">
       <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={projectVariants} className="flex items-center">
         <div className="flex items-center w-full">
-          <Image src={projects} className="w-6 sm:w-8 mr-2" alt="" />
-          <h1 className="text-left text-xl font-bold sm:text-4xl text-gradient">Some Projects I’ve Built</h1>
+          <span className="text-4xl">👩‍💻</span>
+          <h1 className="text-left text-xl font-bold sm:text-4xl text-gradient ml-2">Projects I’ve Done</h1>
           <hr className="border-t border-gray-700 w-1/5 mt-2 ml-3" />
         </div>
       </motion.div>

@@ -24,8 +24,9 @@ const Projects = () => {
     <div className="md:w-9/12 mx-auto py-8 lg:container" id="projects">
       <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={projectVariants} className="flex items-center">
         <div className="flex items-center w-full">
-          <Image src={projects} className="w-6 sm:w-8 mr-2" alt="" />
-          <h1 className="text-left text-xl font-bold sm:text-4xl text-gradient">Some Projects I’ve Built</h1>
+          {/* <Image src={projects} className="w-6 sm:w-8 mr-2" alt="" /> */}
+          <span className="text-4xl">👩‍💻</span>
+          <h1 className="text-left text-xl font-bold sm:text-4xl text-gradient ml-2">Some Projects I’ve Built</h1>
           <hr className="border-t border-gray-700 w-1/5 mt-2 ml-3" />
         </div>
       </motion.div>

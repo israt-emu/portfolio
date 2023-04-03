@@ -150,7 +150,7 @@ const Skills = () => {
     },
   };
   return (
-    <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={skillVariants} className="mx-auto w-full lg:w-9/12 py-8 lg:px-6 lg:container" id="skill">
+    <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true, amount: 0.1}} variants={skillVariants} className="mx-auto w-full lg:w-9/12 py-8 lg:container" id="skill">
       <div className="flex items-center mb-6">
         <Image src={skills} alt="" className="w-12 mr-3" />
         <h2 className="text-xl font-bold sm:text-4xl  text-gradient text-center">My Expertise</h2>
