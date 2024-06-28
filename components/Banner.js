@@ -44,7 +44,7 @@ const Banner = () => {
           className="flex items-center"
         >
           <div className="mb-3 text-small_text font-mono mr-3">
-            <span className="text-xl text-sky-400">2.5 </span> years of Experience
+            <span className="text-xl text-sky-400">1.5 </span> years of Experience
           </div>
           <div className="mb-3 text-small_text font-mono">
             <span className="text-xl text-indigo-600">10+ </span> Projects
