@@ -42,6 +42,30 @@ const Education = () => {
             {" "}
             <Image src={nstu_logo} alt="" className="w-20 mr-3" />
             <div>
+              <h1 className="sm:text-xl text-title">MSc. In Applied Mathematics</h1>
+              <p className="text-sm text-small_text font-mono">NSTU | March 2023-June 2024</p>
+              <Link href="https://nstu.edu.bd/">
+                <BiLinkExternal className="text-small_text text-lg mt-2" />
+              </Link>
+            </div>
+          </div>
+          <Image src={nstu} alt="" className="w-1/2 hidden lg:flex" />
+        </motion.div>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{once: true}}
+          transition={{duration: 0.6, delay: 0.8}}
+          variants={{
+            visible: {opacity: 1, y: 0},
+            hidden: {opacity: 0, y: 70},
+          }}
+          className="grid lg:grid-cols-2 grid-cols-1 gap-5 md:gap-12 items-center mt-4"
+        >
+          <div className="flex items-center bg-slate-600/10 ring-1 ring-violet-200/10 rounded-lg  backdrop-blur-sm">
+            {" "}
+            <Image src={nstu_logo} alt="" className="w-20 mr-3" />
+            <div>
               <h1 className="sm:text-xl text-title">BSc. In Applied Mathematics</h1>
               <p className="text-sm text-small_text font-mono">NSTU | January 2018-March 2023</p>
               <Link href="https://nstu.edu.bd/">

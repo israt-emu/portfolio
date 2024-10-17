@@ -1,11 +1,9 @@
 import {motion} from "framer-motion";
 import Image from "next/image";
-import happyMom from "../assets/images/hapy-mom-main.png";
-import tech from "../assets/images/tech.png";
-import dashboard from "../assets/images/dashboard.png";
 import Link from "next/link";
 import {BsGithub} from "react-icons/bs";
 import {BiLinkExternal} from "react-icons/bi";
+import projects from "/projects.json";
 const AllProjects = () => {
   const projectVariants = {
     offscreen: {
@@ -29,76 +27,36 @@ const AllProjects = () => {
         </div>
       </motion.div>
       <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true}} variants={projectVariants} className="grid lg:grid-cols-2 gap-6 items-center justify-center my-16 ">
-        {/* happy mom  */}
-        <div className="flex flex-col justify-center p-6 md:p-8 bg-slate-600/10 ring-1 ring-violet-200/10 rounded-xl  backdrop-blur-sm h-full">
-          <Image src={happyMom} alt="" className="object-contain mb-4 border border-gradient" />
-          <h1 className="text-purple-400 text-md font-semibold">Frontend</h1>
-          <h1 className="text-title text-2xl text-left font-semibold">Pregnancy Care Website</h1>
+        {projects?.map((p, i) => (
+          <div className="flex flex-col justify-center p-6 md:p-8 bg-slate-600/10 ring-1 ring-violet-200/10 rounded-xl  backdrop-blur-sm h-full" key={i}>
+            <Image src={p?.image} alt="" className="object-contain w-full mb-4 border border-gray-700" width={500} height={280} />
+            <h1 style={{color: p?.color}} className=" text-md font-semibold">
+              {p?.type}
+            </h1>
+            <h1 className="text-title text-2xl text-left font-semibold">{p?.title}</h1>
 
-          <div className="flex flex-wrap items-center text-purple-400 text-sm font-semibold justify-start mt-3 font-mono">
-            <span className="mr-3">React</span>
-            <span className="mr-3">Firebase</span>
-            <span className="mr-3">Tailwind</span>
+            <div style={{color: p?.color}} className="flex flex-wrap items-center text-sm font-semibold justify-start mt-3 font-mono">
+              {p?.techStack?.map((t, i) => (
+                <span className="mr-3 capitalize" key={i}>
+                  {t}
+                </span>
+              ))}
+            </div>
+            <div className="flex items-center mt-3 mb-4 text-small_text justify-start">
+              <Link href={p?.frontend} target="blank">
+                <BsGithub className="text-lg mr-3" title="Frontend Code" />
+              </Link>
+              {p?.backend && (
+                <Link href={p?.backend} target="blank">
+                  <BsGithub className="text-lg mr-3" title="Backend Code" />
+                </Link>
+              )}
+              <Link href={p?.live} target="blank">
+                <BiLinkExternal className="text-lg" title="Live Site" />
+              </Link>
+            </div>
           </div>
-          <div className="flex items-center mt-3 mb-4 text-small_text justify-start">
-            <Link href="https://github.com/israt-emu/happy-mom" target="blank">
-              <BsGithub className="text-lg mr-3" title="Frontend Code" />
-            </Link>
-
-            <Link href="https://happy-mom-1027a.web.app/" target="blank">
-              <BiLinkExternal className="text-lg" title="Live Site" />
-            </Link>
-          </div>
-        </div>
-        {/* tech world  */}
-        <div className="flex flex-col justify-center p-6 md:p-8 bg-slate-600/10 ring-1 ring-violet-200/10 rounded-xl  backdrop-blur-sm h-full">
-          <Image src={tech} alt="" className="object-contain mb-4 border border-gradient" />
-          <h1 className="text-green-400 text-md font-semibold">Frontend</h1>
-          <h1 className="text-title text-2xl text-left font-semibold">Technology learning course provided website</h1>
-
-          <div className="flex flex-wrap items-center text-green-400 text-sm font-semibold justify-start mt-3 font-mono">
-            <span className="mr-3">React</span>
-            <span className="mr-3">CSS</span>
-            <span className="mr-3">Bootstrap</span>
-          </div>
-          <div className="flex items-center mt-3 mb-4 text-small_text justify-start">
-            <Link href="https://github.com/israt-emu/tech-world" target="blank">
-              <BsGithub className="text-lg mr-3" title="Frontend Code" />
-            </Link>
-
-            <Link href="https://tech-world.netlify.app/" target="blank">
-              <BiLinkExternal className="text-lg" title="Live Site" />
-            </Link>
-          </div>
-        </div>
-      </motion.div>
-      {/* //  */}
-      <motion.div initial="offscreen" whileInView="onscreen" viewport={{once: true}} variants={projectVariants} className="grid lg:grid-cols-2 gap-6 items-center justify-center my-16 ">
-        {/* tech world  */}
-        <div className="flex flex-col justify-center p-6 md:p-8 bg-slate-600/10 ring-1 ring-violet-200/10 rounded-xl  backdrop-blur-sm h-full">
-          <Image src={dashboard} alt="" className="object-contain mb-4 border border-gradient" />
-          <h1 className="text-violet-700 text-md font-semibold">FullStack</h1>
-          <h1 className="text-title text-2xl text-left font-semibold">Data Visualization Dashboard</h1>
-
-          <div className="flex flex-wrap items-center text-violet-700 text-sm font-semibold justify-start mt-3 font-mono">
-            <span className="mr-3">React</span>
-            <span className="mr-3">Material UI</span>
-            <span className="mr-3">Node JS</span>
-            <span className="mr-3">MongoDB</span>
-          </div>
-          <div className="flex items-center mt-3 mb-4 text-small_text justify-start">
-            <Link href="https://github.com/israt-emu/task-1" target="blank">
-              <BsGithub className="text-lg mr-3" title="Frontend Code" />
-            </Link>
-            <Link href="https://github.com/israt-emu/task1-server" target="blank">
-              <BsGithub className="text-lg mr-3" title="Backend Code" />
-            </Link>
-
-            <Link href="https://data-visualization-dashboard-task.netlify.app/" target="blank">
-              <BiLinkExternal className="text-lg" title="Live Site" />
-            </Link>
-          </div>
-        </div>
+        ))}
       </motion.div>
     </div>
   );

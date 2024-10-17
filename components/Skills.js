@@ -3,6 +3,7 @@ import skills from "../assets/images/skills.png";
 import c from "../assets/images/c.png";
 import cPlus from "../assets/images/c++.png";
 import JS from "../assets/images/Javascript-JS.png";
+import TS from "../assets/images/ts.png";
 import HTML from "../assets/images/html.png";
 import CSS from "../assets/images/css.png";
 import react from "../assets/images/react.png";
@@ -42,96 +43,102 @@ const Skills = () => {
     },
     {
       id: 4,
+      image: TS,
+      title: "Typescript",
+      description: "TS Programming",
+    },
+    {
+      id: 5,
       image: HTML,
       title: "HTML",
       description: "",
     },
     {
-      id: 5,
+      id: 6,
       image: CSS,
       title: "CSS",
       description: "",
     },
     {
-      id: 6,
+      id: 7,
       image: react,
       title: "React",
       description: "C Programming",
     },
     {
-      id: 7,
+      id: 8,
       image: next,
       title: "Next JS",
       description: "C Programming",
     },
     {
-      id: 8,
+      id: 9,
       image: redux,
       title: "Redux",
       description: "C Programming",
     },
     {
-      id: 9,
+      id: 10,
       image: bootstrap,
       title: "Bootstrap",
       description: "C Programming",
     },
     {
-      id: 10,
+      id: 11,
       image: tailwind,
       title: "Tailwind",
       description: "C Programming",
     },
     {
-      id: 11,
+      id: 12,
       image: material,
       title: "Material Ui",
       description: "C Programming",
     },
     {
-      id: 12,
+      id: 13,
       image: node,
       title: "Node Js",
       description: "C Programming",
     },
     {
-      id: 13,
+      id: 14,
       image: express,
       title: "Express JS",
       description: "C Programming",
     },
     {
-      id: 14,
+      id: 15,
       image: mongodb,
       title: "MongoDB",
       description: "C Programming",
     },
     {
-      id: 15,
+      id: 16,
       image: jwtToken,
       title: "JWT",
       description: "C Programming",
     },
     {
-      id: 16,
+      id: 17,
       image: netlify,
       title: "Netlify",
       description: "C Programming",
     },
     {
-      id: 17,
+      id: 18,
       image: firebase,
       title: "Firebase",
       description: "C Programming",
     },
     {
-      id: 18,
+      id: 19,
       image: canva,
       title: "Canva",
       description: "C Programming",
     },
     {
-      id: 19,
+      id: 20,
       image: figma,
       title: "Figma",
       description: "C Programming",

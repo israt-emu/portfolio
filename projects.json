@@ -1,0 +1,111 @@
+[
+  {
+    "id": 1,
+    "title": "Todo and Note Management APP",
+    "type": "Fullstack",
+    "image": "https://i.ibb.co.com/GCvJJKK/todo.png",
+    "description": "Users Can organize and manage to-do's and notes in Notion-like editor. They can Search and filter todos with advanced options and categorize todos. This site included intuitive UI design with Lottie-react animations and theming feature. Minimal PWA features is also implemented.",
+    "frontend": "https://github.com/israt-emu/nextjs-todo-app",
+    "backend": "",
+    "live": "https://task-planify.vercel.app/",
+    "techStack": ["Next JS 14", "TypeScript", "ShadCN", "Prisma", "PostgreSQL", "BlockNoteEditor"],
+    "color": "#198332"
+  },
+  {
+    "id": 2,
+    "title": "Library Management Website",
+    "type": "Fullstack",
+    "image": "https://i.ibb.co.com/dfDXS9X/library.png",
+    "description": "A library managemnet website where user can search & borrow book,request a new book,add articles.Admin can manage all user & all books and send real time notification to all user.Analytics page includes top borrowed & requested books and top books and also monthly analytics of borrowed books.",
+    "frontend": "https://github.com/israt-emu/Library-management-frontend",
+    "backend": "https://github.com/israt-emu/Library-management-backend",
+    "live": "https://amathlib.netlify.app/",
+    "techStack": ["React", "JWT", "Redux", "Tailwind", "Socket IO", "Node", "Express", "Mongoose"],
+    "color": "#08666e"
+  },
+  {
+    "id": 3,
+    "title": "Service Management Website",
+    "type": "Fullstack",
+    "description": "A service management website where users can browse and book services. They can also review to that specific service. Also, here's an admin dashboard from which admin can manage services, users, reviews etc.",
+    "image": "https://i.ibb.co.com/JrgD9y0/service.png",
+    "frontend": "https://github.com/israt-emu/service-managemnt-frontend",
+    "backend": "https://github.com/israt-emu/service-management-backend",
+    "live": "https://service-frontend-lac.vercel.app/",
+    "techStack": ["Next JS", "JWT", "Redux", "Tailwind", "TypeScript", "Node", "Express", "Mongoose", "Zod"],
+    "color": "#a75894"
+  },
+
+  {
+    "id": 4,
+    "title": "Lipstick Selling Website",
+    "type": "Fullstack",
+    "image": "https://i.ibb.co.com/pJmK43w/lipstick.png",
+    "description": "A Lipstick selling website for buyer. This website includes user dashboard from where buyer can see his/her ordered product , review this site. Also, there is an admin dashboard from where admin can manage all product, make admin other users. This site includes OAuth and Email-Password based authentication.",
+    "frontend": "https://github.com/israt-emu/bloom-lips",
+    "backend": "https://github.com/israt-emu/bloom-lips-server",
+    "live": "https://bloom-lips.web.app/",
+    "techStack": ["React", "Tailwind", "Firebase", "Node", "Express", "MongoDB"],
+    "color": "#F5CAE4"
+  },
+  {
+    "id": 5,
+    "title": "Tour Management Website",
+    "type": "Fullstack",
+    "image": "https://i.ibb.co.com/7nvZcmy/tour.png",
+    "description": "A travel agency website for arranging tour. People can book any tour to any place.Also,there is an admin dashboard & user dashboard. User can manage his/her booked tour. Admin can manage all tour and add new tour plan.This site includes OAuth based authentication.",
+    "frontend": "https://github.com/israt-emu/travely",
+    "backend": "https://github.com/israt-emu/travely-server",
+    "live": "https://travely-217e4.web.app/",
+    "techStack": ["React", "Tailwind", "Firebase", "Node", "Express", "MongoDB"],
+    "color": "#1E3A8A"
+  },
+  {
+    "id": 6,
+    "title": "Pregnancy Care Website",
+    "type": "Frontend",
+    "description": "",
+    "image": "https://i.ibb.co.com/DMZTcQv/hapy-mom-main.png",
+    "frontend": "https://github.com/israt-emu/happy-mom",
+    "backend": "",
+    "live": "https://happy-mom-1027a.web.app/",
+    "techStack": ["React", "Tailwind", "Firebase"],
+    "color": "#875CA8"
+  },
+  {
+    "id": 7,
+    "title": "Technology course provided website",
+    "type": "Frontend",
+    "description": "",
+    "image": "https://i.ibb.co.com/gvZg1cJ/tech.png",
+    "frontend": "https://github.com/israt-emu/tech-world",
+    "backend": "",
+    "live": "https://tech-world.netlify.app/",
+    "techStack": ["React", "CSS", "Bootstrap"],
+    "color": "#308F58"
+  },
+  {
+    "id": 8,
+    "title": "Data Visualization Dashboard",
+    "type": "Fullstack",
+    "description": "",
+    "image": "https://i.ibb.co.com/svHtKRP/dashboard.png",
+    "frontend": "https://github.com/israt-emu/task-1",
+    "backend": "https://github.com/israt-emu/task1-server",
+    "live": "https://data-visualization-dashboard-task.netlify.app/",
+    "techStack": ["React", "Material UI", "Node", "Express", "MongoDB"],
+    "color": "#701A75"
+  },
+  {
+    "id": 3,
+    "title": "Shofy E-commerce Website",
+    "type": "Fullstack",
+    "image": "https://i.ibb.co.com/5kct7K1/shofy.png",
+    "description": "Full Stack Website with user authentication using JWT. The Products page shows all products with filtering and search functionality. One can add a product to the cart after login and can place an order from the checkout page. This site includes a payment system using ssLcommerz-sandbox. From the seller dashboard seller can manage products.",
+    "frontend": "https://github.com/israt-emu/Shofy",
+    "backend": "",
+    "live": "https://shofy-e-commerce.netlify.app/",
+    "techStack": ["React", "JWT", "Redux", "ShadCN", "TypeScript", "Node", "Express", "Mongoose", "Zod"],
+    "color": "#27ACB3"
+  }
+]

@@ -28,8 +28,8 @@ const Banner = () => {
         <div className="text-title font-mono">
           <span className="text-xl">👋</span> Hi, my name is
         </div>
-        <h1 className="text-5xl font-bold leading-none sm:text-6xl text-gradient">Israt Jahan</h1>
-        <div className="mt-6 mb-2 text-lg text-small_text flex justify-center ">
+        <h1 className="text-5xl font-bold leading-none sm:text-6xl text-gradient ">Israt Jahan</h1>
+        <div className="mt-6 mb-2 text-base text-small_text flex justify-center">
           Particularly I’m interested in learning and staying <br className="hidden lg:flex" /> current about programming and technological advancements. Also, I enjoy creating things
           <br className="hidden lg:flex" /> that live on the internet.
         </div>
